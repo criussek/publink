@@ -6,15 +6,12 @@ const options={
 const dimensions=['pain','commercial','icp','expansion','acquisition','leverage','differentiation','revenue','validation','risk'];
 const defaults={pain:15,commercial:15,icp:10,expansion:10,acquisition:5,leverage:15,differentiation:10,revenue:10,validation:5,risk:5};
 
-const replacements={
+const phraseReplacements={
   'Product Builder / Case':'Product Builder / Zadanie',
   '4h case':'zadanie w 4 godziny',
   'Economic buyer':'Decydent budżetowy',
   'Business Owner':'Właściciel biznesowy',
   'revenue ownership':'odpowiedzialność za przychód',
-  'Revenue':'Przychód',
-  'revenue':'przychód',
-  'standalone':'samodzielny',
   'shared intelligence layer':'wspólna warstwa analityczna',
   'Option A':'Opcja A','Option B / start':'Opcja B / start','Option C':'Opcja C',
   'reachable market':'dostępny rynek','target ACV':'docelowe ACV','ARR Y3':'ARR w 3. roku',
@@ -23,28 +20,28 @@ const replacements={
   'Fit do obecnego ICP':'Dopasowanie do obecnego ICP','Expansion / cross-sell':'Rozszerzenie sprzedaży',
   'Acquisition potential':'Potencjał pozyskania klientów','Platform leverage':'Wykorzystanie platformy',
   'Differentiation':'Wyróżnienie na rynku','Time to revenue':'Czas do przychodu','Delivery risk':'Wykonalność / ryzyko dostarczenia',
-  'Score':'Wynik','score':'wynik','Confidence':'Pewność','confidence':'pewność','evidence':'dowody','Evidence':'Dowody',
   'Founder-led sales':'Sprzedaż prowadzona przez Product Buildera','founder-led sales':'sprzedaż prowadzona przez Product Buildera',
   'buyer demos':'prezentacji dla decydentów','design partnerów':'partnerów pilotażowych','design partner':'partner pilotażowy',
   'Kill / pivot criteria':'Kryteria zakończenia / zmiany kierunku','Opportunity':'Szansa biznesowa','Smoke tests':'Szybkie testy rynku',
   'Vertical slice':'Wąski działający fragment','vertical slice':'wąski działający fragment','Product analytics':'Analityka produktu',
   'AI Delivery Economics':'Ekonomika pracy z AI','Working prototype':'Działający prototyp','Engineering + Builder':'Zespół inżynierski + Product Builder',
   'Engineeringiem':'zespołem inżynierskim','Engineering':'Zespół inżynierski','Productionisation':'Przygotowanie produkcyjne',
-  'build log':'dziennik zmian','green light':'zgoda','workflow':'proces roboczy','workflows':'procesy robocze',
-  'userowi':'użytkownikowi','user value':'wartość dla użytkownika','buyer':'decydent','users':'użytkownicy',
+  'build log':'dziennik zmian','green light':'zgoda na pełną budowę',
   'market/competitor scan':'przegląd rynku i konkurencji','risk map':'mapa ryzyk','sales validation':'walidacja sprzedażowa',
-  'success thresholds':'progi sukcesu','routing':'dobór modeli','cached context':'buforowany kontekst','scoped context':'ograniczony kontekst',
-  'subagenci':'subagenci','enterprise readiness':'gotowość do pracy w środowisku enterprise','learning loop':'cykl uczenia się',
-  'cost per learning loop':'koszt jednego cyklu uczenia się','cheap':'tani','Scale':'Skaluj','scale':'skaluj','Pivot':'Zmień kierunek','pivot':'zmień kierunek',
-  'stop':'zatrzymaj','buildem':'budową','build':'budowa','prototype':'prototyp','Prototype':'Prototyp','pricing conversation':'rozmowa o cenie',
+  'success thresholds':'progi sukcesu','cached context':'buforowany kontekst','scoped context':'ograniczony kontekst',
+  'enterprise readiness':'gotowość do działania w środowisku enterprise','learning loop':'cykl uczenia się',
+  'cost per learning loop':'koszt jednego cyklu uczenia się','pricing conversation':'rozmowa o cenie',
   'weekly active accounts':'aktywne konta tygodniowo','Workflow completion':'Ukończenie procesu','30-day retention':'Retencja 30-dniowa',
-  'Global cash position':'Globalna pozycja gotówkowa','7-day projected':'Prognoza za 7 dni','surplus':'nadwyżka','projected shortfall in 5 days':'prognozowany niedobór za 5 dni','within target range':'w docelowym zakresie',
-  'Realny':'Rzeczywisty','benchmark':'punkt odniesienia','benchmarki':'punkty odniesienia','Benchmark':'Punkt odniesienia',
-  'Case':'Zadanie','CASE':'ZADANIE','BUYER':'DECYDENT','OPTIONS':'OPCJE','DECISION':'DECYZJA','SALES':'SPRZEDAŻ','METRICS':'METRYKI','GATES':'BRAMKI DECYZYJNE','BUILD':'BUDOWA','ANCHOR':'TEZA',
-  'expected enterprise value':'oczekiwanej wartości biznesowej','outcome':'wynik biznesowy','metrics':'metryki','TAM':'wielkość rynku','WTP':'gotowość do zapłaty',
-  'first revenue':'pierwszy przychód','first':'pierwszy','product':'produkt','Product':'Produkt','Shared':'Wspólna'
+  'Global cash position':'Globalna pozycja gotówkowa','7-day projected':'Prognoza za 7 dni','projected shortfall in 5 days':'prognozowany niedobór za 5 dni','within target range':'w docelowym zakresie',
+  'expected enterprise value':'oczekiwanej wartości biznesowej','first revenue':'pierwszy przychód','user value':'wartość dla użytkownika',
+  'CASE':'ZADANIE','BUYER':'DECYDENT','OPTIONS':'OPCJE','DECISION':'DECYZJA','SALES':'SPRZEDAŻ','METRICS':'METRYKI','GATES':'BRAMKI DECYZYJNE','BUILD':'BUDOWA','ANCHOR':'TEZA'
 };
-function localizeStaticCopy(){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(node=>{let t=node.nodeValue;Object.entries(replacements).forEach(([from,to])=>{t=t.split(from).join(to)});node.nodeValue=t})}
+const wordReplacements={
+  'revenue':'przychód','evidence':'dowody','confidence':'pewność','workflow':'proces roboczy','workflows':'procesy robocze',
+  'buyer':'decydent','users':'użytkownicy','score':'wynik','Scale':'Skaluj','scale':'skaluj','Pivot':'Zmień kierunek','pivot':'zmień kierunek','stop':'zatrzymaj',
+  'build':'budowa','prototype':'prototyp','Prototype':'Prototyp','benchmark':'punkt odniesienia','benchmarki':'punkty odniesienia','metrics':'metryki','outcome':'wynik biznesowy','surplus':'nadwyżka'
+};
+function localizeStaticCopy(){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(node=>{let t=node.nodeValue;Object.entries(phraseReplacements).forEach(([from,to])=>{t=t.split(from).join(to)});Object.entries(wordReplacements).forEach(([from,to])=>{const safe=from.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');t=t.replace(new RegExp(`\\b${safe}\\b`,'g'),to)});node.nodeValue=t})}
 
 function getWeights(){const w={};dimensions.forEach(d=>{const el=document.querySelector(`[data-weight="${d}"]`);w[d]=Number(el?.value||defaults[d]);});return w}
 function scoreOption(key,weights){let total=0,weightSum=0;dimensions.forEach(d=>{total+=options[key].scores[d]*weights[d];weightSum+=weights[d]});return weightSum?total/weightSum:0}

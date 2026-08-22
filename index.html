@@ -4,137 +4,136 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Product Builder — jak podejmuję decyzję</title>
-  <meta name="description" content="Uproszczona odpowiedź na zadanie rekrutacyjne Product Builder: jak wybieram kierunek, jak go sprawdzam i kiedy decyduję o dalszej inwestycji." />
+  <title>Product Builder — jak podchodzę do decyzji</title>
+  <meta name="description" content="Odpowiedź na zadanie rekrutacyjne Product Builder: tok myślenia, walidacja, MVP, GTM i decyzja inwestycyjna." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="#start">Product Builder / zadanie</a>
-    <nav>
-      <a href="#krok0">0. Portfolio</a>
-      <a href="#krok1">1. Wybór</a>
-      <a href="#krok2">2. Sprawdzenie</a>
-      <a href="#krok3">3. Prototyp</a>
-      <a href="#krok4">4. Sprzedaż</a>
-      <a href="#krok5">5. Decyzja</a>
+    <nav class="step-nav" aria-label="Nawigacja po krokach">
+      <a href="#krok1" data-step="1"><span>1</span>Portfolio</a>
+      <a href="#krok2" data-step="2"><span>2</span>Wybór</a>
+      <a href="#krok3" data-step="3"><span>3</span>Rozmowy</a>
+      <a href="#krok4" data-step="4"><span>4</span>MVP</a>
+      <a href="#krok5" data-step="5"><span>5</span>GTM</a>
+      <a href="#krok6" data-step="6"><span>6</span>Decyzja</a>
     </nav>
   </div>
 </header>
 
 <main id="start">
-  <section class="hero">
+  <section class="hero snap-section">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Zadanie rekrutacyjne • około 4h • jawne założenia</div>
-        <h1>Jak wybrałbym jeden z trzech kierunków i sprawdził, czy warto go dalej rozwijać?</h1>
-        <p class="lead">Nie zaczynam od budowania rozwiązania. Najpierw upewniam się, że dobrze rozumiem sytuację biznesową, potem wybieram najbardziej obiecujący kierunek, a dopiero później zwiększam koszt kolejnych eksperymentów.</p>
+        <div class="eyebrow">Zadanie rekrutacyjne • jawne założenia • uproszczony model</div>
+        <h1>Jak wybrałbym jeden z trzech kierunków i doprowadził go do decyzji: rozwijamy, zmieniamy czy zatrzymujemy?</h1>
+        <p class="lead">Na potrzeby zadania celowo upraszczam dane i liczbę metryk. Chcę pokazać przede wszystkim sposób myślenia, kolejność decyzji i to, jak zwiększam poziom inwestycji razem z poziomem pewności.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#krok1">Zacznij od kroku 1</a>
+          <a class="text-link" href="#enterprise-model">Zobacz pełniejszy model enterprise ↓</a>
+        </div>
       </div>
       <aside class="sticky yellow hero-note">
         <span class="sticky-label">Moja zasada</span>
-        <strong>Najpierw redukuję niepewność. Dopiero potem inwestuję więcej.</strong>
-        <p>W tym zadaniu nie próbuję stworzyć idealnej strategii dla fikcyjnej firmy. Pokazuję sposób podejmowania decyzji.</p>
+        <strong>Nie próbuję od razu udowodnić, że pomysł jest dobry.</strong>
+        <p>Najpierw szukam najtańszego sposobu, żeby sprawdzić, czy główne założenia w ogóle są prawdziwe.</p>
       </aside>
     </div>
   </section>
 
   <section class="assumptions">
     <div class="wrap">
-      <div class="section-title small-title">
-        <span>Założenia, które dopowiadam do briefu</span>
+      <div class="section-title compact-title">
+        <span>Założenia do briefu</span>
+        <h2>Co przyjmuję, żeby móc podjąć decyzję</h2>
       </div>
       <div class="assumption-grid">
         <div class="assumption"><b>Firma</b><span>globalny B2B SaaS finansowy</span></div>
         <div class="assumption"><b>Decydent budżetowy</b><span>CFO</span></div>
         <div class="assumption"><b>Użytkownicy</b><span>zespoły finansowe</span></div>
-        <div class="assumption"><b>Odpowiedzialność roli</b><span>produkt + pierwsza sprzedaż + przychód</span></div>
+        <div class="assumption"><b>Odpowiedzialność</b><span>produkt + wynik biznesowy + udział w pierwszym GTM</span></div>
+        <div class="assumption"><b>Prototyp</b><span>Product Builder buduje go sam lub razem z Product Designerem / UX/UI i innymi osobami potrzebnymi do testu</span></div>
+        <div class="assumption"><b>AI</b><span>wykorzystuję AI do researchu, prototypowania, kodowania i przyspieszania iteracji</span></div>
         <div class="assumption"><b>Waluta</b><span>USD</span></div>
-        <div class="assumption"><b>Ograniczenie</b><span>możemy uruchomić jeden nowy kierunek</span></div>
+        <div class="assumption"><b>Ograniczenie z zadania</b><span>z trzech nowych kierunków możemy uruchomić tylko jeden</span></div>
+      </div>
+      <div class="simplification-note">
+        <b>Uproszczenie na potrzeby zadania:</b> w realnym enterprise SaaS patrzyłbym na szerszy zestaw danych: ekonomię produktu, adopcję na poziomie kont i ról, retencję, monetyzację, koszty wdrożenia, obciążenie supportu, ryzyka techniczne, bezpieczeństwo, integracje i wpływ na całe portfolio. Pełniejszy model jest na dole jako załącznik.
       </div>
     </div>
   </section>
 
-  <section id="krok0" class="stage stage-light">
-    <div class="wrap">
+  <section id="krok1" class="stage stage-light snap-section" data-stage="1">
+    <div class="wrap stage-inner">
       <div class="stage-head">
-        <div class="stage-number">00</div>
+        <div class="stage-number">01</div>
         <div>
-          <div class="stage-kicker">Krok 0 — zanim wybiorę nowy produkt</div>
-          <h2>Sprawdzam, czy obecne portfolio nie zmienia kontekstu decyzji.</h2>
+          <div class="stage-kicker">Krok 1 — kontekst portfela</div>
+          <h2>Zanim wybiorę nowy kierunek, sprawdzam czy obecne portfolio nie zmienia sensu tej decyzji.</h2>
         </div>
       </div>
 
       <div class="thinking-grid">
-        <article class="thinking-card">
-          <span class="thinking-label">Co robię?</span>
-          <p>Patrzę na pięć istniejących modułów i ich etap rozwoju. Szukam produktów, które pochłaniają dużo inwestycji, ale nie pokazują jeszcze wystarczającej wartości biznesowej.</p>
-        </article>
-        <article class="thinking-card">
-          <span class="thinking-label">Po co?</span>
-          <p>Chcę mieć pewność, że dokładanie szóstego produktu jest lepszym wykorzystaniem kapitału niż korekta jednego z obecnych kierunków.</p>
-        </article>
-        <article class="thinking-card decision-card">
-          <span class="thinking-label">Decyzja</span>
-          <p>Nie obchodzę ograniczenia z briefu. Nadal wybieram jeden z trzech nowych kierunków. Portfolio check daje mi tylko pełniejszy obraz.</p>
-        </article>
+        <article class="thinking-card"><span class="thinking-label">Co robię?</span><p>Patrzę na pięć obecnych modułów: etap rozwoju, przychód, trend, adopcję i koszt dalszej inwestycji. Nie robię pełnego portfolio review — szukam tylko sygnałów, które mogłyby zmienić decyzję o dokładaniu kolejnego produktu.</p></article>
+        <article class="thinking-card"><span class="thinking-label">Jak myślę?</span><ul class="compact-list"><li>Czy któryś produkt jest wyraźnie niedoinwestowany mimo mocnych wyników?</li><li>Czy któryś pochłania capacity bez wystarczającego efektu?</li><li>Czy nowy kierunek może wykorzystać już zbudowane dane, klientów lub capabilities?</li></ul></article>
+        <article class="thinking-card decision-card"><span class="thinking-label">Decyzja</span><ul class="compact-list"><li>Nie obchodzę briefu przez „zabicie” MVP.</li><li>Insights traktuję jako temat do osobnego sprawdzenia, nie automatyczny kill.</li><li>Wracam do właściwego zadania: wybór 1 z 3 nowych opcji.</li></ul></article>
       </div>
 
       <div class="portfolio-simple">
-        <div class="portfolio-card"><span>Scaling</span><h3>CashFlow</h3><b>$8.4M ARR</b><p>Mocny produkt i naturalny punkt zaczepienia dla nowych modułów.</p></div>
-        <div class="portfolio-card"><span>PMF</span><h3>Plan</h3><b>$5.6M ARR</b><p>Stabilny produkt do planowania i scenariuszy finansowych.</p></div>
-        <div class="portfolio-card"><span>PMF</span><h3>Close</h3><b>$4.1M ARR</b><p>Powtarzalny proces, wysoka regularność użycia.</p></div>
-        <div class="portfolio-card"><span>MVP+</span><h3>Collect</h3><b>$2.3M ARR</b><p>Rośnie szybko i dostarcza ważnych danych o należnościach.</p></div>
-        <div class="portfolio-card watch"><span>MVP</span><h3>Insights</h3><b>$1.4M ARR</b><p>Ma wartość, ale wymaga sprawdzenia, czy powinien pozostać osobnym modułem.</p></div>
+        <div class="portfolio-card"><span>Scaling</span><h3>CashFlow</h3><b>$8.4M ARR</b><p>Mocny produkt i naturalny punkt zaczepienia dla nowych funkcji finansowych.</p></div>
+        <div class="portfolio-card"><span>PMF</span><h3>Plan</h3><b>$5.6M ARR</b><p>Stabilny produkt do planowania i scenariuszy.</p></div>
+        <div class="portfolio-card"><span>PMF</span><h3>Close</h3><b>$4.1M ARR</b><p>Regularny, powtarzalny proces.</p></div>
+        <div class="portfolio-card"><span>MVP+</span><h3>Collect</h3><b>$2.3M ARR</b><p>Rośnie i dostarcza ważnych danych o należnościach.</p></div>
+        <div class="portfolio-card watch"><span>MVP</span><h3>Insights</h3><b>$1.4M ARR</b><p>Ma wartość, ale sprawdziłbym czy powinien pozostać osobnym modułem.</p></div>
       </div>
 
       <div class="sticky-row">
-        <aside class="sticky pink"><span class="sticky-label">Pytanie, które zadaję</span><strong>Czy Insights powinien pozostać osobnym produktem, czy stać się wspólną warstwą raportowania dla innych modułów?</strong></aside>
-        <aside class="sticky blue"><span class="sticky-label">Wniosek</span><strong>To ważne, ale nie zatrzymuje wyboru A/B/C.</strong><p>Wracam do głównego zadania.</p></aside>
+        <aside class="sticky pink"><span class="sticky-label">Pytanie poboczne</span><strong>Czy Insights ma być samodzielnym produktem, czy wspólną warstwą raportowania?</strong></aside>
+        <aside class="sticky blue"><span class="sticky-label">Dlaczego nie zatrzymuję tu zadania?</span><strong>Bo brief mówi wprost: wybierz jeden z trzech nowych kierunków.</strong><p>Portfolio check ma poprawić jakość decyzji, a nie ominąć ograniczenie.</p></aside>
       </div>
+
+      <div class="stage-footer-nav"><a href="#start">← Założenia</a><a href="#krok2">Krok 2: wybór opcji →</a></div>
     </div>
   </section>
 
-  <section id="krok1" class="stage stage-dark">
-    <div class="wrap">
+  <section id="krok2" class="stage stage-dark snap-section" data-stage="2">
+    <div class="wrap stage-inner">
       <div class="stage-head inverse">
-        <div class="stage-number">01</div>
+        <div class="stage-number">02</div>
         <div>
-          <div class="stage-kicker">Krok 1 — wybór kierunku do sprawdzenia</div>
-          <h2>Upraszczam trzy opcje tak, żeby można było je porównać bez fałszywej precyzji.</h2>
+          <div class="stage-kicker">Krok 2 — wybór kierunku</div>
+          <h2>Na potrzeby zadania tworzę trzy proste opcje, które da się szybko zrozumieć i uczciwie porównać.</h2>
         </div>
       </div>
 
       <div class="option-simple-grid">
         <article class="option-simple">
-          <div class="option-letter">A</div>
-          <h3>Wydatki</h3>
+          <div class="option-letter">A</div><h3>Wydatki</h3>
           <p><b>Problem:</b> firma nie ma jednej kontroli nad zakupami i akceptacją wydatków.</p>
           <p><b>Użytkownik:</b> finanse + managerowie.</p>
-          <p><b>Plus:</b> duży rynek.</p>
-          <p><b>Ryzyko:</b> bardzo konkurencyjna i szeroka kategoria.</p>
+          <p><b>Atut:</b> duży rynek i łatwo zrozumiałe value proposition.</p>
+          <p><b>Ryzyko:</b> szeroka, bardzo konkurencyjna kategoria.</p>
         </article>
         <article class="option-simple selected">
-          <div class="option-letter">B</div>
-          <div class="selected-badge">Pierwszy do sprawdzenia</div>
-          <h3>Płynność</h3>
-          <p><b>Problem:</b> CFO i treasury nie mają szybkiego, aktualnego obrazu środków na wielu kontach i podmiotach.</p>
-          <p><b>Użytkownik:</b> treasury / finanse.</p>
-          <p><b>Plus:</b> bardzo blisko obecnego CashFlow.</p>
-          <p><b>Ryzyko:</b> integracje bankowe i bezpieczeństwo.</p>
+          <div class="option-letter">B</div><div class="selected-badge">Sprawdzam jako pierwszą</div><h3>Płynność</h3>
+          <p><b>Problem:</b> CFO i zespół finansowy nie mają szybkiego obrazu środków na wielu kontach i podmiotach.</p>
+          <p><b>Użytkownik:</b> Treasury / finanse.</p>
+          <p><b>Atut:</b> mocne powiązanie z istniejącym CashFlow.</p>
+          <p><b>Ryzyko:</b> integracje bankowe, bezpieczeństwo i jakość danych.</p>
         </article>
         <article class="option-simple">
-          <div class="option-letter">C</div>
-          <h3>Kapitał obrotowy</h3>
-          <p><b>Problem:</b> firma nie wie, które należności i płatności najbardziej wpływają na gotówkę.</p>
+          <div class="option-letter">C</div><h3>Kapitał obrotowy</h3>
+          <p><b>Problem:</b> firma nie wie, które należności i płatności najmocniej wpływają na gotówkę.</p>
           <p><b>Użytkownik:</b> CFO + AR/AP.</p>
-          <p><b>Plus:</b> mocno wykorzystuje dane całej platformy.</p>
-          <p><b>Ryzyko:</b> trudniej udowodnić gotowość do zapłaty.</p>
+          <p><b>Atut:</b> wykorzystuje dane z wielu modułów.</p>
+          <p><b>Ryzyko:</b> trudniej szybko udowodnić gotowość do zapłaty.</p>
         </article>
       </div>
 
       <div class="compare-box">
-        <div class="compare-head"><h3>Porównuję tylko pięć rzeczy</h3><p>Resztę zostawiam na później, jeśli którakolwiek z opcji przejdzie pierwszą walidację.</p></div>
+        <div class="compare-head"><h3>Porównuję pięć rzeczy</h3><p>To nie jest „model prawdy”. To szybki filtr, który wskazuje, gdzie warto zrobić głębszą walidację.</p></div>
         <div class="compare-table">
           <div class="compare-row header"><span>Kryterium</span><span>Wydatki</span><span>Płynność</span><span>Kapitał obrotowy</span></div>
           <div class="compare-row"><span>Siła problemu</span><b>4/5</b><b>5/5</b><b>5/5</b></div>
@@ -146,70 +145,75 @@
       </div>
 
       <div class="sticky-row dark-notes">
-        <aside class="sticky yellow"><span class="sticky-label">Jak myślę?</span><strong>Nie wybieram największego rynku. Wybieram kierunek, w którym najłatwiej połączyć realny problem, istniejących klientów i drogę do przychodu.</strong></aside>
-        <aside class="sticky green"><span class="sticky-label">Decyzja</span><strong>Najpierw sprawdzam Płynność.</strong><p>To jeszcze nie jest decyzja o budowie produktu. To decyzja o tym, gdzie inwestuję kolejne dni pracy.</p></aside>
+        <aside class="sticky yellow"><span class="sticky-label">Jak myślę — 1</span><strong>Nie wybieram największego rynku automatycznie.</strong><p>Największy TAM nie pomaga, jeśli potrzebujemy lat i ogromnej inwestycji, żeby dojść do przychodu.</p></aside>
+        <aside class="sticky pink"><span class="sticky-label">Jak myślę — 2</span><strong>Preferuję adjacency do istniejącego produktu i klientów.</strong><p>CashFlow daje Płynności przewagę startową: dane, kontekst i potencjalny cross-sell.</p></aside>
+        <aside class="sticky blue"><span class="sticky-label">Jak myślę — 3</span><strong>Patrzę na koszt uzyskania odpowiedzi.</strong><p>Chcę wybrać opcję, którą da się szybko sprawdzić bez pełnej budowy.</p></aside>
+        <aside class="sticky green"><span class="sticky-label">Decyzja</span><strong>Sprawdzam opcję o nazwie „Płynność”.</strong><p>To decyzja o kolejnej inwestycji w walidację, nie zgoda na pełny development.</p></aside>
       </div>
+
+      <div class="stage-footer-nav"><a href="#krok1">← Krok 1</a><a href="#krok3">Krok 3: rozmowy →</a></div>
     </div>
   </section>
 
-  <section id="krok2" class="stage stage-light">
-    <div class="wrap">
-      <div class="stage-head">
-        <div class="stage-number">02</div>
-        <div>
-          <div class="stage-kicker">Krok 2 — sprawdzenie, czy problem naprawdę istnieje</div>
-          <h2>Rozmawiam równolegle z użytkownikiem, kupującym i zespołem technicznym.</h2>
-        </div>
-      </div>
-
-      <div class="three-track">
-        <article>
-          <span class="track-label">Użytkownik</span>
-          <h3>Treasury / finanse</h3>
-          <p>Pytam, jak dziś sprawdzają gotówkę, ile czasu to zajmuje, gdzie pojawiają się błędy i co dzieje się, gdy informacja jest spóźniona.</p>
-          <div class="question">Nie pytam: „czy używałbyś takiego produktu?”</div>
-        </article>
-        <article>
-          <span class="track-label">Kupujący</span>
-          <h3>CFO</h3>
-          <p>Sprawdzam koszt problemu, priorytet względem innych inicjatyw i czy CFO byłby gotowy zapłacić za jego rozwiązanie.</p>
-          <div class="question">Szukam konkretnego zobowiązania, nie komplementów.</div>
-        </article>
-        <article>
-          <span class="track-label">Technologia</span>
-          <h3>Engineering</h3>
-          <p>Weryfikuję najdroższe ryzyka: bank connectivity, uprawnienia, bezpieczeństwo, dane i zgodność z obecnym modelem platformy.</p>
-          <div class="question">Nie projektuję jeszcze docelowej architektury.</div>
-        </article>
-      </div>
-
-      <div class="thinking-grid">
-        <article class="thinking-card"><span class="thinking-label">Co chcę wiedzieć po 2 tygodniach?</span><p>Czy problem jest częsty i kosztowny, czy dotyczy wystarczająco dużej części naszego ICP i czy kupujący chce wejść z nami w pilot.</p></article>
-        <article class="thinking-card"><span class="thinking-label">Co uznaję za mocny sygnał?</span><p>Klient daje dostęp do prawdziwego procesu i danych, wraca na kolejne spotkanie i jest gotowy wejść w pilotaż.</p></article>
-        <article class="thinking-card decision-card"><span class="thinking-label">Co mnie zatrzymuje?</span><p>Problem okazuje się rzadki, „nice to have”, trudny do wycenienia albo wymaga nieproporcjonalnie kosztownej integracji.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="krok3" class="stage stage-soft">
-    <div class="wrap">
+  <section id="krok3" class="stage stage-light snap-section" data-stage="3">
+    <div class="wrap stage-inner">
       <div class="stage-head">
         <div class="stage-number">03</div>
         <div>
-          <div class="stage-kicker">Krok 3 — Product Builder</div>
-          <h2>Buduję najmniejszy działający prototyp, który może odpowiedzieć na konkretne pytanie.</h2>
+          <div class="stage-kicker">Krok 3 — rozmowy i discovery</div>
+          <h2>Zanim dopracuję rozwiązanie, zbieram jakościowy obraz problemu od użytkowników, CFO i zespołu technicznego.</h2>
+        </div>
+      </div>
+
+      <div class="source-grid">
+        <article><span class="track-label">Skąd biorę rozmówców?</span><h3>Najpierw z najbliższego rynku</h3><ul class="compact-list"><li>obecni klienci CashFlow — najlepszy test adjacency,</li><li>klienci zgłaszający podobne problemy do CSM / Support,</li><li>otwarte szanse w CRM pasujące do ICP,</li><li>kilka firm spoza bazy przez outbound / network, żeby nie zamknąć się w obecnych klientach.</li></ul></article>
+        <article><span class="track-label">Jak przygotowuję rozmowę?</span><h3>Scenariusz + konkretna hipoteza</h3><ul class="compact-list"><li>15–20 min o obecnym procesie i problemach,</li><li>10 min o konsekwencjach biznesowych,</li><li>krótkie demo prototypu dopiero po discovery,</li><li>5–10 min o reakcji, warunkach pilota i następnym kroku.</li></ul></article>
+        <article><span class="track-label">Jak zapisuję feedback?</span><h3>Jedna karta na każdą rozmowę</h3><ul class="compact-list"><li>rozmowa video, nagranie za zgodą + transkrypcja,</li><li>rola, firma, obecny proces, pain points, workaround, cytaty,</li><li>reakcja na demo, warunki pilota, obiekcje i follow-up,</li><li>synteza tematów w Productboard / Confluence lub innym wspólnym repo wiedzy.</li></ul></article>
+      </div>
+
+      <div class="interview-template">
+        <div class="template-head"><h3>Przykładowy scenariusz rozmowy</h3><span>nie pytam „czy podoba Ci się pomysł?”</span></div>
+        <div class="question-grid">
+          <div><b>Obecny proces</b><p>„Pokaż mi, jak dziś sprawdzasz pozycję gotówkową firmy.”</p></div>
+          <div><b>Częstotliwość</b><p>„Jak często robicie to ręcznie i kto bierze w tym udział?”</p></div>
+          <div><b>Koszt problemu</b><p>„Co się dzieje, jeśli dane są nieaktualne albo czegoś nie zauważycie?”</p></div>
+          <div><b>Alternatywy</b><p>„Jakie narzędzia / arkusze / bankowość wykorzystujecie dzisiaj?”</p></div>
+          <div><b>Priorytet</b><p>„Gdybyście mieli trzy problemy finansowe do rozwiązania w tym kwartale, gdzie byłby ten?”</p></div>
+          <div><b>Po demo</b><p>„Co musiałoby się wydarzyć, żebyście zgodzili się sprawdzić to na swoich danych?”</p></div>
         </div>
       </div>
 
       <div class="sticky-row">
-        <aside class="sticky yellow"><span class="sticky-label">Hipoteza</span><strong>Jeżeli pokażemy wszystkie salda i przyszły niedobór w jednym miejscu, zespół finansowy szybciej podejmie decyzję niż w obecnym procesie.</strong></aside>
-        <aside class="sticky blue"><span class="sticky-label">Zakres prototypu</span><strong>Widoczność środków + prosty alert + jedna rekomendacja.</strong><p>Bez pełnego TMS, przelewów, skomplikowanych uprawnień i dziesiątek ekranów.</p></aside>
+        <aside class="sticky yellow"><span class="sticky-label">Mocny sygnał</span><strong>Klient daje dostęp do prawdziwego procesu i chce kolejnego spotkania z osobą decyzyjną.</strong></aside>
+        <aside class="sticky pink"><span class="sticky-label">Słaby sygnał</span><strong>„Fajne”, „ciekawe”, „pewnie byśmy używali”.</strong><p>Opinia bez zachowania lub commitmentu ma niską wagę.</p></aside>
+        <aside class="sticky blue"><span class="sticky-label">Technologia</span><strong>Równolegle sprawdzam największe ryzyka.</strong><p>Integracje bankowe, model uprawnień, bezpieczeństwo, latency danych i wpływ na obecną architekturę.</p></aside>
+        <aside class="sticky green"><span class="sticky-label">Artefakt</span><strong>Po serii rozmów powstaje synteza, nie 12 osobnych notatek bez wniosków.</strong><p>Tematy, częstotliwość, segmenty, obiekcje i pytania do kolejnej iteracji.</p></aside>
+      </div>
+
+      <div class="stage-footer-nav"><a href="#krok2">← Krok 2</a><a href="#krok4">Krok 4: MVP →</a></div>
+    </div>
+  </section>
+
+  <section id="krok4" class="stage stage-soft snap-section" data-stage="4">
+    <div class="wrap stage-inner">
+      <div class="stage-head">
+        <div class="stage-number">04</div>
+        <div>
+          <div class="stage-kicker">Krok 4 — MVP i eksperyment</div>
+          <h2>Buduję MVP tylko po to, żeby przetestować najważniejszy workflow i zebrać realny feedback na czymś działającym.</h2>
+        </div>
+      </div>
+
+      <div class="mvp-explainer">
+        <div><span class="thinking-label">Problem do rozwiązania</span><h3>Finance team traci czas na składanie sald z wielu banków i nie widzi z wyprzedzeniem, gdzie pojawi się niedobór.</h3></div>
+        <div><span class="thinking-label">MVP</span><h3>Jedno miejsce z saldami, prostą prognozą 7-dniową i alertem, że jedna spółka spadnie poniżej ustalonego bufora.</h3></div>
+        <div><span class="thinking-label">Pytanie badawcze</span><h3>Czy taki widok realnie skraca tygodniowy proces liquidity review i pomaga podjąć decyzję szybciej?</h3></div>
       </div>
 
       <div class="prototype">
         <div class="prototype-top">
-          <div><span class="prototype-brand">Płynność / prototyp</span><small>Dane przykładowe</small></div>
-          <span class="prototype-status">wersja do rozmowy z klientem</span>
+          <div><span class="prototype-brand">Płynność / MVP</span><small>Dane przykładowe • prototyp do rozmowy i pilotażu</small></div>
+          <span class="prototype-status">wąski zakres</span>
         </div>
         <div class="prototype-grid">
           <div class="prototype-panel">
@@ -219,130 +223,175 @@
             <div class="account-row"><div><b>Wielka Brytania</b><span>w normie</span></div><strong>$1.67M</strong></div>
           </div>
           <div class="prototype-panel recommendation">
-            <span class="track-label">Rekomendacja</span>
-            <h3>Przenieś $240k do spółki w Niemczech.</h3>
-            <p>Według prognozy za 5 dni saldo spadnie poniżej ustalonego bufora.</p>
-            <button id="approve-transfer">Utwórz szkic decyzji</button>
-            <small id="transfer-status">To tylko symulacja — żadna operacja finansowa nie zostanie wykonana.</small>
+            <span class="track-label">Sygnał do decyzji</span>
+            <h3>Niemcy spadną poniżej bufora za 5 dni.</h3>
+            <p>MVP nie wykonuje transferów. Pokazuje problem, kontekst i pozwala zapisać szkic decyzji do dalszej pracy zespołu.</p>
+            <button id="approve-transfer">Zapisz szkic decyzji</button>
+            <small id="transfer-status">To symulacja. Żadna operacja finansowa nie zostanie wykonana.</small>
           </div>
         </div>
       </div>
+
+      <div class="sticky-row">
+        <aside class="sticky yellow"><span class="sticky-label">Dlaczego taki zakres?</span><strong>Testuję workflow, nie kompletność produktu.</strong><p>Nie buduję przelewów, pełnego TMS, skomplikowanych uprawnień i wszystkich banków świata.</p></aside>
+        <aside class="sticky blue"><span class="sticky-label">Z kim buduję?</span><strong>Product Builder + odpowiednie osoby do ryzyka.</strong><p>W enterprise najczęściej wspólnie z Product Designerem / UX/UI oraz szybkim wsparciem Engineeringu, Security lub domenowego eksperta.</p></aside>
+        <aside class="sticky pink"><span class="sticky-label">Jak pomaga AI?</span><strong>Przyspiesza pierwszą wersję i iteracje.</strong><p>Research, copy, prototyp UI, kod, testy i przygotowanie wariantów — ale nie zastępuje rozmowy z klientem ani decyzji biznesowej.</p></aside>
+        <aside class="sticky green"><span class="sticky-label">Co mierzę w MVP?</span><strong>Na początku tylko to, co odpowiada na pytanie.</strong><p>Czas do pierwszej wartości, ukończenie liquidity review, powrót do produktu i jakościowy feedback użytkownika.</p></aside>
+      </div>
+
+      <div class="stage-footer-nav"><a href="#krok3">← Krok 3</a><a href="#krok5">Krok 5: GTM →</a></div>
     </div>
   </section>
 
-  <section id="krok4" class="stage stage-dark">
-    <div class="wrap">
+  <section id="krok5" class="stage stage-dark snap-section" data-stage="5">
+    <div class="wrap stage-inner">
       <div class="stage-head inverse">
-        <div class="stage-number">04</div>
+        <div class="stage-number">05</div>
         <div>
-          <div class="stage-kicker">Krok 4 — sprzedaż jest częścią walidacji</div>
-          <h2>Nie czekam z kontaktem z rynkiem, aż produkt będzie „gotowy”.</h2>
+          <div class="stage-kicker">Krok 5 — GTM i pierwsze wdrożenia</div>
+          <h2>W tym modelu roli Product Builder aktywnie uczestniczy w wejściu produktu na rynek i pierwszych rozmowach sprzedażowych.</h2>
         </div>
       </div>
 
-      <div class="sales-path">
-        <div><span>1</span><b>10 rozmów</b><p>problem i obecny proces</p></div>
-        <div><span>2</span><b>5 prezentacji</b><p>prototyp + rozmowa o wartości</p></div>
-        <div><span>3</span><b>3 piloty</b><p>realne dane i proces</p></div>
-        <div><span>4</span><b>1 płatny pilot</b><p>pierwszy sygnał komercyjny</p></div>
+      <p class="stage-lead inverse-lead">To nie jest uniwersalna zasada dla enterprise SaaS. To świadome założenie pod rolę, o której rozmawialiśmy: Builder pomaga wypracować pierwsze powtarzalne value proposition, demo, ICP i argumenty sprzedażowe, zanim temat przejmie skalowalny proces Sales.</p>
+
+      <div class="gtm-grid">
+        <article><span class="track-label">1. ICP</span><h3>Gdzie zaczynam?</h3><p>Obecni klienci CashFlow z wieloma podmiotami, kontami bankowymi i regularnym procesem liquidity review.</p></article>
+        <article><span class="track-label">2. Value proposition</span><h3>Co sprzedaję?</h3><p>Nie „dashboard”. Sprzedaję szybszy i pewniejszy obraz płynności bez ręcznego składania danych z wielu miejsc.</p></article>
+        <article><span class="track-label">3. Demo</span><h3>Co pokazuję?</h3><p>Jedną historię: widzę salda → widzę ryzyko za 5 dni → wiem, gdzie trzeba zareagować.</p></article>
+        <article><span class="track-label">4. Oferta pilota</span><h3>Jak obniżam próg?</h3><p>Wąski pilot na wybranych kontach / podmiotach, z jasnym zakresem, czasem i kryteriami sukcesu.</p></article>
+        <article><span class="track-label">5. Builder w rozmowie</span><h3>Po co tam jestem?</h3><p>Słyszę obiekcje z pierwszej ręki, iteruję demo, odkrywam brakujące wymagania i sprawdzam język, który faktycznie rezonuje z CFO.</p></article>
+        <article><span class="track-label">6. Handoff do Sales</span><h3>Kiedy?</h3><p>Gdy mamy powtarzalny ICP, problem, demo, pricing logic i pierwsze przypadki, które da się sprzedać bez ciągłego udziału Product Buildera.</p></article>
       </div>
 
       <div class="sticky-row dark-notes">
-        <aside class="sticky pink"><span class="sticky-label">Dlaczego ja?</span><strong>Product Builder sam zdobywa pierwszych klientów i uczy się z procesu sprzedaży.</strong><p>Dopiero gdy proces zaczyna być powtarzalny, przekazuję go szerzej do Sales.</p></aside>
-        <aside class="sticky yellow"><span class="sticky-label">Czego szukam?</span><strong>Nie „podoba mi się”. Szukam: dostępu do danych, pilota, udziału CFO i gotowości do zapłaty.</strong></aside>
+        <aside class="sticky yellow"><span class="sticky-label">Moja rola</span><strong>Nie „sprzedaję sam”. Współtworzę GTM i jestem obecny przy pierwszych klientach.</strong></aside>
+        <aside class="sticky pink"><span class="sticky-label">Co chcę zrozumieć?</span><strong>Dlaczego klient kupuje albo nie kupuje.</strong><p>Obiekcje, procurement, bezpieczeństwo, integracje, cena, timing i osoba, która naprawdę ma problem.</p></aside>
+        <aside class="sticky blue"><span class="sticky-label">GTM artefakty</span><strong>ICP, one-liner, demo story, FAQ obiekcji, pilot offer, pricing hypothesis.</strong></aside>
+        <aside class="sticky green"><span class="sticky-label">Sygnał postępu</span><strong>Nie liczba „dobrych rozmów”, tylko ruch klienta do następnego etapu.</strong><p>Demo → pilot → aktywne użycie → decyzja komercyjna.</p></aside>
       </div>
+
+      <div class="stage-footer-nav"><a href="#krok4">← Krok 4</a><a href="#krok6">Krok 6: decyzja →</a></div>
     </div>
   </section>
 
-  <section id="krok5" class="stage stage-light">
-    <div class="wrap">
+  <section id="krok6" class="stage stage-light snap-section" data-stage="6">
+    <div class="wrap stage-inner">
       <div class="stage-head">
-        <div class="stage-number">05</div>
+        <div class="stage-number">06</div>
         <div>
-          <div class="stage-kicker">Krok 5 — decyzja po walidacji</div>
-          <h2>Kończę etap jedną z trzech decyzji: rozwijamy, zmieniamy kierunek albo zatrzymujemy.</h2>
+          <div class="stage-kicker">Krok 6 — decyzja inwestycyjna</div>
+          <h2>Po pilocie nie pytam „czy feature wyszedł dobrze?”. Pytam, czy mamy wystarczający sygnał, żeby zwiększyć inwestycję.</h2>
         </div>
       </div>
 
+      <div class="metric-strips">
+        <div><b>Problem</b><span>Czy problem jest częsty, kosztowny i ważny dla właściwego segmentu?</span></div>
+        <div><b>Adopcja</b><span>Czy użytkownicy faktycznie wykonują kluczowy workflow, a nie tylko logują się do pilota?</span></div>
+        <div><b>Retencja</b><span>Czy wracają do liquidity review po pierwszej sesji i użycie utrzymuje się przez kolejne tygodnie?</span></div>
+        <div><b>Wartość</b><span>Czy skraca się czas procesu, poprawia widoczność albo redukuje ręczną pracę / ryzyko?</span></div>
+        <div><b>Monetyzacja</b><span>Czy CFO chce przejść z pilota do płatnego wdrożenia i czy cena ma sens dla ekonomiki produktu?</span></div>
+        <div><b>Enterprise readiness</b><span>Czy integracje, security, wdrożenie i support nie zabijają economics?</span></div>
+      </div>
+
       <div class="decision-grid">
-        <article class="decision-option go"><span>ROZWIJAM</span><h3>Problem + użytkownik + kupujący są potwierdzeni</h3><p>Przechodzę do wspólnego planowania produkcyjnej wersji z Engineeringiem.</p></article>
-        <article class="decision-option pivot"><span>ZMIENIAM</span><h3>Problem jest realny, ale rozwiązanie lub segment nie działa</h3><p>Koryguję rozwiązanie, ICP albo model sprzedaży i robię kolejny mały test.</p></article>
-        <article class="decision-option stop"><span>ZATRZYMUJĘ</span><h3>Nie ma wystarczającej wartości lub gotowości do zapłaty</h3><p>Kończę inwestycję, zanim stanie się dużym projektem.</p></article>
+        <article class="decision-option go"><span>ROZWIJAM</span><h3>Problem, użycie i komercja idą w tym samym kierunku</h3><p>Przechodzę z zespołem do produkcyjnej wersji, dokładam instrumentation, plan wdrożenia, GTM i kolejne segmenty.</p></article>
+        <article class="decision-option pivot"><span>ZMIENIAM</span><h3>Problem jest realny, ale segment, rozwiązanie lub economics nie działają</h3><p>Koryguję hipotezę i robię kolejny mały test zamiast od razu rozbudowywać produkt.</p></article>
+        <article class="decision-option stop"><span>ZATRZYMUJĘ</span><h3>Brakuje wartości, użycia lub gotowości do zapłaty</h3><p>Kończę inwestycję zanim stanie się dużym programem tylko dlatego, że już dużo w niego włożyliśmy.</p></article>
       </div>
 
-      <div class="sticky-row">
-        <aside class="sticky green"><span class="sticky-label">Warunek dalszej inwestycji</span><strong>Minimum: realny problem, powtarzalna wartość dla użytkownika, zaangażowany CFO i co najmniej jeden płatny pilot.</strong></aside>
-        <aside class="sticky blue"><span class="sticky-label">Granica Builder / Engineering</span><strong>Builder udowadnia, co warto zbudować. Engineering pomaga zamienić to w bezpieczny i skalowalny produkt.</strong></aside>
+      <div class="enterprise-actions">
+        <h3>Jeżeli decyzja brzmi „rozwijamy” — co robi Product Builder dalej w enterprise?</h3>
+        <div class="enterprise-action-grid">
+          <div><b>Produkt</b><span>docelowy scope, roadmapa outcome'ów, wymagania i priorytety z Engineeringiem / Designem</span></div>
+          <div><b>Dane</b><span>instrumentacja, dashboardy adopcji, segmentacja kont, analiza kohort i jakościowe feedback loops</span></div>
+          <div><b>Wdrożenie</b><span>onboarding, integracje, security review, rollout plan i mierzenie time-to-value</span></div>
+          <div><b>GTM</b><span>pricing, packaging, enablement Sales/CS, demo, case study i pierwsze referencje</span></div>
+          <div><b>Biznes</b><span>ARR / pipeline, expansion, koszt utrzymania, wpływ na churn i wartość całego portfolio</span></div>
+          <div><b>Iteracja</b><span>regularne customer calls, Productboard / repo feedbacku, analiza supportu i decyzje build / don't build</span></div>
+        </div>
       </div>
+
+      <div class="timeline-section-inline">
+        <div class="section-title compact-title"><span>Ramy czasowe moich działań</span><h2>Przykładowy plan od wyboru opcji do decyzji o dalszej inwestycji</h2></div>
+        <div class="timeline-track">
+          <div><b>Tydzień 1</b><span>portfolio + dane wewnętrzne + lista rozmówców + scenariusz discovery</span></div>
+          <div><b>Tydzień 2</b><span>rozmowy użytkownik / CFO + feasibility z Engineeringiem + synteza problemu</span></div>
+          <div><b>Tydzień 3</b><span>MVP / prototyp + iteracje po feedbacku + przygotowanie oferty pilota</span></div>
+          <div><b>Tydzień 4</b><span>pierwsze demo + dobór partnerów pilotażowych + GTM hypothesis</span></div>
+          <div><b>Tydzień 5–6</b><span>pilot na realnych danych + podstawowa analityka + cotygodniowy feedback</span></div>
+          <div><b>Tydzień 7–8</b><span>retencja / value / pricing / ryzyka enterprise → decyzja rozwijamy, zmieniamy lub stop</span></div>
+        </div>
+      </div>
+
+      <div class="stage-footer-nav"><a href="#krok5">← Krok 5</a><a href="#ai">AI i narzędzia →</a></div>
     </div>
   </section>
 
-  <section class="timeline-section">
-    <div class="wrap">
-      <div class="section-title"><span>Jak wygląda mój czas pracy</span><h2>Dwa timeline’y: 4 godziny na zadanie i około 4 tygodnie na prawdziwą decyzję.</h2></div>
-      <div class="timeline-grid">
-        <article class="timeline-card">
-          <h3>To zadanie — 4h</h3>
-          <ol>
-            <li><b>0:00–0:30</b><span>założenia + portfolio check</span></li>
-            <li><b>0:30–1:15</b><span>3 opcje + proste porównanie</span></li>
-            <li><b>1:15–2:00</b><span>plan walidacji + kryteria decyzji</span></li>
-            <li><b>2:00–3:20</b><span>prototyp + materiał do rozmowy z klientem</span></li>
-            <li><b>3:20–4:00</b><span>synteza, porządki, przygotowanie do wysłania</span></li>
-          </ol>
-        </article>
-        <article class="timeline-card">
-          <h3>Prawdziwa walidacja — około 4 tygodnie</h3>
-          <ol>
-            <li><b>Tydzień 1</b><span>rozmowy z użytkownikami i CFO</span></li>
-            <li><b>Tydzień 2</b><span>prototyp + pierwsze prezentacje</span></li>
-            <li><b>Tydzień 3</b><span>piloty i techniczne sprawdzenie ryzyk</span></li>
-            <li><b>Tydzień 4</b><span>płatny pilot / zmiana kierunku / stop</span></li>
-          </ol>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="ai-section">
+  <section id="ai" class="ai-section">
     <div class="wrap ai-layout">
       <div>
-        <div class="section-title"><span>Jak korzystam z AI</span><h2>AI ma przyspieszać iteracje, ale nie zastępować decyzji produktowych.</h2></div>
-        <p class="lead-small">W tej roli dużo rzeczy powstaje szybko: prototypy, landing pages, analizy, research i kod. Dlatego kontrola kosztu oraz jakości użycia modeli ma znaczenie.</p>
+        <div class="section-title"><span>AI w codziennej pracy Buildera</span><h2>Używam AI do skracania czasu od pomysłu do kolejnej informacji zwrotnej.</h2></div>
+        <p class="lead-small">Nie traktuję tego jako osobnej „strategii AI”. To warsztat pracy: research, szybkie prototypy, kod, testy, porządkowanie feedbacku i automatyzacja powtarzalnych zadań.</p>
       </div>
       <div class="ai-notes">
-        <div class="mini-note"><b>Proste zadanie?</b><span>tańszy / szybszy model</span></div>
-        <div class="mini-note"><b>Stały kontekst?</b><span>cache zamiast wysyłania wszystkiego od nowa</span></div>
-        <div class="mini-note"><b>Dużo dokumentacji?</b><span>RAG / pobieram tylko potrzebne fragmenty</span></div>
-        <div class="mini-note"><b>Duże repo?</b><span>pracuję na konkretnym pliku lub zmianie, nie na całym kodzie</span></div>
-        <div class="mini-note"><b>Trudna decyzja?</b><span>mocniejszy model + moja weryfikacja</span></div>
+        <div class="mini-note"><b>Proste zadanie</b><span>tańszy / szybszy model zamiast najmocniejszego</span></div>
+        <div class="mini-note"><b>Stały kontekst</b><span>cache / krótszy kontekst zamiast ponownego wysyłania wszystkiego</span></div>
+        <div class="mini-note"><b>Duże repo</b><span>pracuję na konkretnym pliku, diffie lub obszarze</span></div>
+        <div class="mini-note"><b>Subagenci</b><span>osobne role do researchu, eksploracji kodu, testów czy review</span></div>
+        <div class="mini-note"><b>Caveman</b><span>eksperymentalnie ograniczam verbosity agentów, gdy pełny kontekst nie daje wartości</span></div>
+      </div>
+    </div>
+    <div class="wrap tool-links">
+      <a href="https://github.com/hashgraph-online/awesome-codex-plugins" target="_blank" rel="noreferrer"><b>Awesome Codex Plugins</b><span>katalog pluginów / skills / zasobów do Codexa</span></a>
+      <a href="https://github.com/nsEytgXm/subagents_configs" target="_blank" rel="noreferrer"><b>Subagents configs</b><span>gotowe konfiguracje ról subagentów</span></a>
+      <a href="https://github.com/juliusbrussee/caveman" target="_blank" rel="noreferrer"><b>Caveman</b><span>eksperymentalne ograniczanie tokenów / verbosity agentów</span></a>
+    </div>
+  </section>
+
+  <section id="enterprise-model" class="enterprise-model-section">
+    <div class="wrap">
+      <div class="section-title">
+        <span>Załącznik — pełniejszy model enterprise</span>
+        <h2>Co mierzyłbym i dokumentował poza uproszczoną wersją tego zadania</h2>
+        <p class="lead-small">Nie wszystko musi pojawić się w głównej narracji. Ten załącznik pokazuje, jak wyglądałby szerszy model, gdy produkt naprawdę wchodzi do enterprise SaaS.</p>
+      </div>
+      <a class="svg-card" href="enterprise-model.svg" target="_blank" rel="noreferrer">
+        <img src="enterprise-model.svg" alt="Pełniejszy model enterprise: discovery, delivery, adoption, retention, monetization i enterprise readiness" />
+        <span>Otwórz diagram w pełnym rozmiarze ↗</span>
+      </a>
+
+      <div class="expanded-appendix-grid">
+        <article><h3>Discovery i feedback</h3><p>Rozmowy z użytkownikami, CFO, CSM, Support i Sales. Karty rozmów, transkrypcje, tagowanie tematów, synteza wzorców, analiza obecnego workflow i konkurencyjnych alternatyw.</p></article>
+        <article><h3>Adopcja</h3><p>Activation, time-to-first-value, udział aktywnych kont, penetracja ról w obrębie klienta, completion kluczowego workflow i breadth / depth użycia.</p></article>
+        <article><h3>Retencja</h3><p>Powroty do kluczowego procesu, kohorty W4/W8/W12, konta zagrożone spadkiem użycia, przyczyny churnu i jakościowy feedback z wdrożeń.</p></article>
+        <article><h3>Monetyzacja</h3><p>Pilot → paid, ACV, pipeline, win/loss reasons, expansion, attach rate do CashFlow, wpływ na NRR oraz gotowość do różnych modeli pricing / packaging.</p></article>
+        <article><h3>Enterprise readiness</h3><p>Time-to-implement, integracje, security, compliance, support load, SLA, performance, reliability, uprawnienia, audytowalność i koszt utrzymania.</p></article>
+        <article><h3>Portfolio</h3><p>Wpływ na istniejące moduły, cannibalization, cross-sell, wspólne capabilities, koszty zespołu, opportunity cost oraz decyzje inwestycyjne na poziomie całej platformy.</p></article>
       </div>
     </div>
   </section>
 
   <section class="cheat-section">
     <div class="wrap">
-      <div class="section-title"><span>Skrót do rozmowy</span><h2>Jeżeli mam wyjaśnić całe podejście w dwie minuty:</h2></div>
+      <div class="section-title"><span>Skrót do rozmowy</span><h2>Całe podejście w sześciu zdaniach</h2></div>
       <div class="cheat-grid">
-        <div><b>1</b><span>Sprawdzam portfolio, ale nie obchodzę ograniczenia.</span></div>
-        <div><b>2</b><span>Upraszczam trzy opcje i wybieram kierunek do walidacji.</span></div>
-        <div><b>3</b><span>Rozmawiam z użytkownikiem, CFO i Engineeringiem.</span></div>
-        <div><b>4</b><span>Buduję mały prototyp pod jedno konkretne pytanie.</span></div>
-        <div><b>5</b><span>Sam próbuję zdobyć pierwszych klientów i płatny pilot.</span></div>
-        <div><b>6</b><span>Dopiero potem zwiększam inwestycję albo kończę temat.</span></div>
+        <div><b>1</b><span>Sprawdzam obecne portfolio, ale nadal respektuję ograniczenie z briefu: wybieram tylko 1 z 3 nowych kierunków.</span></div>
+        <div><b>2</b><span>Tworzę proste opcje i wybieram „Płynność” jako pierwszą do sprawdzenia, bo łączy silny problem z adjacency do CashFlow.</span></div>
+        <div><b>3</b><span>Rozmawiam z użytkownikami, CFO i Engineeringiem, zapisując każdą rozmowę w ustrukturyzowany sposób i syntetyzując wspólne wzorce.</span></div>
+        <div><b>4</b><span>Buduję wąskie MVP — sam lub z Designerem / Engineeringiem — żeby przetestować jeden kluczowy workflow.</span></div>
+        <div><b>5</b><span>Współtworzę GTM i uczestniczę w pierwszych rozmowach, pilotach i iteracjach, ale nie próbuję zastępować działu sprzedaży.</span></div>
+        <div><b>6</b><span>Decyzję o dalszej inwestycji opieram na problemie, adopcji, retencji, wartości, monetyzacji i ryzykach enterprise.</span></div>
       </div>
-
-      <details class="appendix">
-        <summary>Założenia dodatkowe i rzeczy, które dołożyłbym dopiero po wejściu w pilot</summary>
-        <div class="appendix-grid">
-          <div><h3>Analityka</h3><p>Na tym etapie wystarczą cztery zdarzenia: podłączenie banku, otwarcie widoku płynności, obejrzenie alertu i podjęcie decyzji. Rozbudowaną taksonomię zrobiłbym dopiero, gdy produkt faktycznie trafia do pilota.</p></div>
-          <div><h3>Konkurencja</h3><p>Do szybkiego rozeznania kategorii wystarczą trzy punkty odniesienia: Ramp dla wydatków, Kyriba dla treasury i HighRadius dla working capital. Pełny research robię dopiero dla wybranego kierunku.</p></div>
-          <div><h3>Metryki</h3><p>Na początku ważniejsze są: czy problem powtarza się, czy użytkownik wraca do rozwiązania i czy kupujący chce płacić. Dziesiątki KPI na tym etapie dają głównie złudzenie precyzji.</p></div>
-        </div>
-      </details>
     </div>
   </section>
 </main>
+
+<div class="floating-stepper" aria-label="Szybka nawigacja">
+  <button id="prev-step" type="button" aria-label="Poprzedni krok">↑</button>
+  <span id="step-indicator">Start</span>
+  <button id="next-step" type="button" aria-label="Następny krok">↓</button>
+</div>
 
 <footer>
   <div class="wrap footer-inner">

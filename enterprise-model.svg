@@ -1,23 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
-<title id="title">Pełniejszy model Product Buildera w enterprise SaaS</title><desc id="desc">Mapa obszarów od discovery przez MVP i wdrożenie do adopcji, retencji, monetyzacji i decyzji portfolio.</desc>
-<rect width="1600" height="980" fill="#f7f8fc"/>
-<style>.h{font:700 42px Inter,Arial,sans-serif;fill:#17203a}.sub{font:400 20px Inter,Arial,sans-serif;fill:#65708a}.k{font:800 14px Inter,Arial,sans-serif;fill:#5066b5;letter-spacing:1.6px}.t{font:700 24px Inter,Arial,sans-serif;fill:#17203a}.b{font:400 17px Inter,Arial,sans-serif;fill:#59647d}.s{font:700 16px Inter,Arial,sans-serif;fill:#26304a}.arrow{stroke:#8797cf;stroke-width:3;fill:none;marker-end:url(#m)}.box{fill:#fff;stroke:#dfe4ee;stroke-width:2}.soft{fill:#eef3ff;stroke:#cfd8f7;stroke-width:2}.green{fill:#e8f6eb;stroke:#b9dfc2;stroke-width:2}.yellow{fill:#fff8d5;stroke:#ead68a;stroke-width:2}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120" role="img" aria-labelledby="title desc">
+<title id="title">Pełniejszy model Product Buildera w enterprise SaaS</title>
+<desc id="desc">Mapa obszarów od discovery przez MVP i pilot do adopcji, retencji, monetyzacji i decyzji portfolio.</desc>
+<rect width="1800" height="1120" fill="#f7f8fc"/>
+<style>
+.h{font:700 42px Inter,Arial,sans-serif;fill:#17203a}.sub{font:400 19px Inter,Arial,sans-serif;fill:#65708a}.k{font:800 14px Inter,Arial,sans-serif;fill:#5066b5;letter-spacing:1.5px}.t{font:700 24px Inter,Arial,sans-serif;fill:#17203a}.b{font:400 16px Inter,Arial,sans-serif;fill:#59647d}.s{font:700 17px Inter,Arial,sans-serif;fill:#26304a}.arrow{stroke:#8797cf;stroke-width:3;fill:none;marker-end:url(#m)}.box{fill:#fff;stroke:#dfe4ee;stroke-width:2}.soft{fill:#eef3ff;stroke:#cfd8f7;stroke-width:2}.green{fill:#e8f6eb;stroke:#b9dfc2;stroke-width:2}.yellow{fill:#fff8d5;stroke:#ead68a;stroke-width:2}
+</style>
 <defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#8797cf"/></marker></defs>
-<text x="70" y="76" class="k">ZAŁĄCZNIK / MODEL ENTERPRISE</text><text x="70" y="130" class="h">Co mierzę poza uproszczonym case'em</text><text x="70" y="170" class="sub">Nie wszystko naraz. Zakres pomiaru rośnie wraz z dojrzałością produktu i poziomem inwestycji.</text>
 
-<rect x="70" y="230" rx="18" ry="18" width="270" height="190" class="box"/><text x="95" y="270" class="k">1 / DISCOVERY</text><text x="95" y="310" class="t">Problem i segment</text><text x="95" y="345" class="b">• rozmowy z userami / CFO</text><text x="95" y="375" class="b">• obecny workflow i workaround</text><text x="95" y="405" class="b">• częstotliwość / koszt problemu</text>
-<rect x="390" y="230" rx="18" ry="18" width="270" height="190" class="soft"/><text x="415" y="270" class="k">2 / MVP</text><text x="415" y="310" class="t">Pierwsza wartość</text><text x="415" y="345" class="b">• activation</text><text x="415" y="375" class="b">• time-to-first-value</text><text x="415" y="405" class="b">• completion core workflow</text>
-<rect x="710" y="230" rx="18" ry="18" width="270" height="190" class="box"/><text x="735" y="270" class="k">3 / PILOT</text><text x="735" y="310" class="t">Użycie i wartość</text><text x="735" y="345" class="b">• adopcja kont i ról</text><text x="735" y="375" class="b">• repeat usage</text><text x="735" y="405" class="b">• jakościowy feedback</text>
-<rect x="1030" y="230" rx="18" ry="18" width="270" height="190" class="green"/><text x="1055" y="270" class="k">4 / COMMERCIAL</text><text x="1055" y="310" class="t">Monetyzacja</text><text x="1055" y="345" class="b">• pilot → paid</text><text x="1055" y="375" class="b">• ACV / pricing / packaging</text><text x="1055" y="405" class="b">• pipeline / win-loss</text>
-<path d="M340 325 H385" class="arrow"/><path d="M660 325 H705" class="arrow"/><path d="M980 325 H1025" class="arrow"/>
+<text x="70" y="72" class="k">ZAŁĄCZNIK / MODEL ENTERPRISE</text>
+<text x="70" y="126" class="h">Co mierzę poza uproszczonym case'em</text>
+<text x="70" y="166" class="sub">Zakres pomiaru rośnie wraz z dojrzałością produktu i poziomem inwestycji — nie mierzę wszystkiego od pierwszego dnia.</text>
 
-<rect x="70" y="490" rx="18" ry="18" width="370" height="205" class="box"/><text x="95" y="530" class="k">ADOPCJA I RETENCJA</text><text x="95" y="570" class="t">Czy wartość się utrzymuje?</text><text x="95" y="607" class="b">• active accounts / role penetration</text><text x="95" y="637" class="b">• cohort retention W4 / W8 / W12</text><text x="95" y="667" class="b">• breadth / depth kluczowego workflow</text>
-<rect x="485" y="490" rx="18" ry="18" width="370" height="205" class="yellow"/><text x="510" y="530" class="k">ENTERPRISE READINESS</text><text x="510" y="570" class="t">Czy economics nie zabija wdrożenie?</text><text x="510" y="607" class="b">• time-to-implement / integrations</text><text x="510" y="637" class="b">• security / permissions / audit</text><text x="510" y="667" class="b">• support load / SLA / reliability</text>
-<rect x="900" y="490" rx="18" ry="18" width="370" height="205" class="soft"/><text x="925" y="530" class="k">PORTFOLIO I BIZNES</text><text x="925" y="570" class="t">Czy produkt wzmacnia platformę?</text><text x="925" y="607" class="b">• ARR / expansion / NRR impact</text><text x="925" y="637" class="b">• attach rate / cross-sell</text><text x="925" y="667" class="b">• opportunity cost / shared capabilities</text>
+<!-- Górny przepływ -->
+<rect x="70" y="225" rx="18" width="300" height="215" class="box"/>
+<text x="96" y="266" class="k">1 / DISCOVERY</text><text x="96" y="307" class="t">Problem i segment</text>
+<text x="96" y="346" class="b">• rozmowy z użytkownikami i CFO</text>
+<text x="96" y="378" class="b">• obecny proces i obejścia</text>
+<text x="96" y="410" class="b">• częstotliwość i koszt problemu</text>
 
-<rect x="70" y="755" rx="22" ry="22" width="1230" height="145" fill="#172554"/><text x="105" y="800" style="font:800 15px Inter,Arial,sans-serif;fill:#aebdff;letter-spacing:1.4px">BRAMKA DECYZYJNA</text><text x="105" y="842" style="font:700 27px Inter,Arial,sans-serif;fill:white">Rozwijamy / zmieniamy kierunek / zatrzymujemy</text><text x="105" y="875" style="font:400 17px Inter,Arial,sans-serif;fill:#d5dcf4">Decyzja łączy problem, adopcję, retencję, wartość, monetyzację, ryzyko enterprise i wpływ na portfolio.</text>
-<path d="M255 695 V748" class="arrow"/><path d="M670 695 V748" class="arrow"/><path d="M1085 695 V748" class="arrow"/>
+<rect x="415" y="225" rx="18" width="300" height="215" class="soft"/>
+<text x="441" y="266" class="k">2 / MVP</text><text x="441" y="307" class="t">Pierwsza wartość</text>
+<text x="441" y="346" class="b">• aktywacja</text>
+<text x="441" y="378" class="b">• czas do pierwszej wartości</text>
+<text x="441" y="410" class="b">• ukończenie kluczowego procesu</text>
 
-<rect x="1345" y="230" rx="18" ry="18" width="190" height="470" fill="#fff" stroke="#dfe4ee" stroke-width="2"/><text x="1370" y="270" class="k">STAŁY LOOP</text><text x="1370" y="312" class="s">Customer calls</text><text x="1370" y="344" class="b">CRM / CSM / Support</text><text x="1370" y="390" class="s">Product analytics</text><text x="1370" y="422" class="b">cohorts / funnels</text><text x="1370" y="468" class="s">Feedback repo</text><text x="1370" y="500" class="b">Productboard / docs</text><text x="1370" y="546" class="s">GTM learning</text><text x="1370" y="578" class="b">win/loss / objections</text><text x="1370" y="624" class="s">Build / don't build</text><text x="1370" y="656" class="b">ciągłe decyzje</text>
-<text x="70" y="944" class="sub">Uproszczony case pokazuje tylko najważniejsze sygnały. Ten model pokazuje pełniejszy warsztat Product Buildera po wejściu produktu w realne enterprise delivery.</text>
+<rect x="760" y="225" rx="18" width="300" height="215" class="box"/>
+<text x="786" y="266" class="k">3 / PILOT</text><text x="786" y="307" class="t">Użycie i wartość</text>
+<text x="786" y="346" class="b">• adopcja na kontach i rolach</text>
+<text x="786" y="378" class="b">• ponowne użycie</text>
+<text x="786" y="410" class="b">• jakościowy feedback z pilota</text>
+
+<rect x="1105" y="225" rx="18" width="300" height="215" class="green"/>
+<text x="1131" y="266" class="k">4 / KOMERCJALIZACJA</text><text x="1131" y="307" class="t">Monetyzacja</text>
+<text x="1131" y="346" class="b">• pilot → płatny produkt</text>
+<text x="1131" y="378" class="b">• ACV, pricing i packaging</text>
+<text x="1131" y="410" class="b">• pipeline oraz win / loss</text>
+
+<path d="M370 333 H410" class="arrow"/><path d="M715 333 H755" class="arrow"/><path d="M1060 333 H1100" class="arrow"/>
+
+<!-- Stały loop po prawej -->
+<rect x="1450" y="225" rx="18" width="285" height="515" class="box"/>
+<text x="1478" y="266" class="k">STAŁY FEEDBACK LOOP</text>
+<text x="1478" y="310" class="s">Rozmowy z klientami</text><text x="1478" y="340" class="b">CRM / CSM / Support</text>
+<text x="1478" y="390" class="s">Analityka produktu</text><text x="1478" y="420" class="b">kohorty / lejki / użycie</text>
+<text x="1478" y="470" class="s">Repozytorium feedbacku</text><text x="1478" y="500" class="b">Productboard / dokumentacja</text>
+<text x="1478" y="550" class="s">Nauka z GTM</text><text x="1478" y="580" class="b">obiekcje / win-loss / pricing</text>
+<text x="1478" y="630" class="s">Decyzje produktowe</text><text x="1478" y="660" class="b">budować / zmieniać / odrzucić</text>
+<text x="1478" y="710" class="b">Pętla działa przez cały cykl.</text>
+
+<!-- Drugi poziom -->
+<rect x="70" y="505" rx="18" width="400" height="235" class="box"/>
+<text x="98" y="548" class="k">ADOPCJA I RETENCJA</text><text x="98" y="592" class="t">Czy wartość się utrzymuje?</text>
+<text x="98" y="632" class="b">• aktywne konta i penetracja ról</text>
+<text x="98" y="664" class="b">• retencja kohort W4 / W8 / W12</text>
+<text x="98" y="696" class="b">• szerokość i głębokość użycia</text>
+
+<rect x="515" y="505" rx="18" width="400" height="235" class="yellow"/>
+<text x="543" y="548" class="k">ENTERPRISE READINESS</text><text x="543" y="592" class="t">Czy wdrożenie ma sens ekonomiczny?</text>
+<text x="543" y="632" class="b">• czas wdrożenia i integracje</text>
+<text x="543" y="664" class="b">• security, uprawnienia i audyt</text>
+<text x="543" y="696" class="b">• support, SLA i niezawodność</text>
+
+<rect x="960" y="505" rx="18" width="445" height="235" class="soft"/>
+<text x="988" y="548" class="k">PORTFOLIO I BIZNES</text><text x="988" y="592" class="t">Czy produkt wzmacnia platformę?</text>
+<text x="988" y="632" class="b">• ARR, expansion i wpływ na NRR</text>
+<text x="988" y="664" class="b">• attach rate i cross-sell</text>
+<text x="988" y="696" class="b">• opportunity cost i wspólne capabilities</text>
+
+<!-- Bramka -->
+<rect x="70" y="820" rx="22" width="1335" height="175" fill="#172554"/>
+<text x="105" y="866" style="font:800 15px Inter,Arial,sans-serif;fill:#aebdff;letter-spacing:1.4px">BRAMKA DECYZYJNA</text>
+<text x="105" y="914" style="font:700 30px Inter,Arial,sans-serif;fill:white">Rozwijamy / zmieniamy kierunek / zatrzymujemy</text>
+<text x="105" y="955" style="font:400 17px Inter,Arial,sans-serif;fill:#d5dcf4">Łączę sygnały z problemu, adopcji, retencji, wartości, monetyzacji, ryzyka enterprise i wpływu na portfolio.</text>
+<path d="M270 740 V812" class="arrow"/><path d="M715 740 V812" class="arrow"/><path d="M1182 740 V812" class="arrow"/>
+
+<text x="70" y="1054" class="sub">Uproszczony case pokazuje najważniejsze decyzje. Ten załącznik pokazuje szerszy warsztat po wejściu produktu w realne enterprise delivery.</text>
 </svg>

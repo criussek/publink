@@ -10,6 +10,11 @@ layoutFix.textContent=`
   .enterprise-model-section{scroll-margin-top:76px}
   .svg-card{overflow-x:auto;overflow-y:hidden}
   .svg-card img{display:block;width:100%;height:auto;max-width:none}
+  .product-docs-link{display:grid;gap:4px;margin:20px 0 4px;padding:18px 20px;border:1px solid #cdd7f3;border-radius:16px;background:#fff;color:#17203a;text-decoration:none;box-shadow:0 12px 32px rgba(35,52,105,.08)}
+  .product-docs-link span{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:#5368b4;font-weight:850}
+  .product-docs-link b{font-size:21px;color:#334a9d}
+  .product-docs-link small{font-size:14px;color:#65708a}
+  .product-docs-link:hover{transform:translateY(-1px);border-color:#8fa0da}
   @media(max-width:900px){.svg-card img{min-width:1050px}.cheat-section{padding-top:105px!important}}
 `;
 document.head.appendChild(layoutFix);
@@ -30,3 +35,12 @@ nextButton?.addEventListener('click',()=>go(1));
 window.addEventListener('scroll',()=>requestAnimationFrame(updateNavigation),{passive:true});
 window.addEventListener('resize',updateNavigation);
 updateNavigation();
+
+const mvpSection=document.querySelector('#krok4 .mvp-explainer');
+if(mvpSection){
+  const docsLink=document.createElement('a');
+  docsLink.href='liquidity-docs.html';
+  docsLink.className='product-docs-link';
+  docsLink.innerHTML='<span>Przykład warsztatu dokumentacyjnego</span><b>Otwórz interaktywną dokumentację opcji „Płynność” →</b><small>Problem discovery, meeting notes, feedback, solution discovery, AC, walidacja, tech, GTM, success metrics i KNOW / SAY / SHOW.</small>';
+  mvpSection.insertAdjacentElement('afterend',docsLink);
+}

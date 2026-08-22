@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="noindex,nofollow"/>
+  <title>Product Builder — decyzja inwestycyjna</title>
+  <meta name="description" content="Interaktywny case Product Builder: portfolio, wybór kierunku, walidacja, founder-led sales, analityka i AI delivery economics."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="topbar"><div class="wrap"><div class="brand"><span class="brand-dot"></span>Product Builder / Case</div><nav><a href="#decyzja">Decyzja</a><a href="#portfolio">Portfolio</a><a href="#opcje">Opcje</a><a href="#konsola">Konsola</a><a href="#walidacja">Walidacja</a><a href="#ai">AI</a><a href="#prototyp">Prototyp</a><a href="#cheatsheet">Cheatsheet</a></nav></div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">4h case • założenia jawne • dane fikcyjne</span>
+  <h1>Najpierw decyzja biznesowa. Potem produkt. Na końcu kod.</h1>
+  <p>Moja odpowiedź na zadanie nie zaczyna się od backlogu. Zaczyna się od pytania, gdzie kolejny dolar inwestycji produktowej ma największą szansę stworzyć powtarzalną wartość dla klienta i revenue dla firmy.</p>
+  <div class="hero-actions"><a class="btn primary" href="#decyzja">Zobacz decyzję</a><a class="btn" href="#konsola">Przetestuj scoring</a><a class="btn" href="https://github.com/criussek/publink" target="_blank" rel="noreferrer">GitHub / build log</a></div>
+  <div class="notice"><b>Co pochodzi z briefu?</b> Globalny modułowy SaaS finansowy, 5 istniejących modułów w fazach od MVP do Scaling, 3 nowe opcje i budżet pozwalający rozpocząć tylko jedną. <b>Co jest moim założeniem?</b> Cała ekonomika, nazwy produktów, persony, metryki, konkurenci fikcyjni i wyniki symulacji.</div>
+</div></section>
+
+<section id="decyzja" class="section"><div class="wrap">
+  <div class="decision">
+    <div><span class="decision-badge">DECYZJA POCZĄTKOWA</span><h2>Waliduję Treasury jako pierwszy kierunek.</h2><p class="muted">Nie daje mu jeszcze green light do pełnego developmentu. Daję mu kolejną inwestycję w evidence, ponieważ na przyjętych założeniach najlepiej łączy ból CFO, cross-sell, leverage istniejącego CashFlow i czas do pierwszego revenue.</p></div>
+    <div class="decision-side"><b>Trzy rzeczy, których nie robię</b><ul><li>Nie wybieram najwyższego TAM-u automatycznie.</li><li>Nie traktuję pozytywnych wywiadów jak potwierdzenia PMF.</li><li>Nie obchodzę constraintu budżetowego przez „zabicie” obecnego MVP.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="zalozenia" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">01 / Założenia</div><h2>Model firmy i odpowiedzialności</h2></div><p class="section-intro">Northstar Finance Cloud jest fikcyjną platformą B2B SaaS dla mid-market i enterprise. CFO kupuje wynik biznesowy, ale użytkownicy finansowi decydują, czy wartość faktycznie się materializuje.</p></div>
+  <div class="grid four">
+    <div class="card flat"><div class="metric-label">Economic buyer</div><div class="big-number">CFO</div><p>Budżet, płynność, kontrola, przewidywalność, working capital i ryzyko.</p></div>
+    <div class="card flat"><div class="metric-label">Użytkownicy</div><div class="big-number">5 ról</div><p>Treasury, FP&A, Controller, AR/AP i Finance Analyst.</p></div>
+    <div class="card flat"><div class="metric-label">Model</div><div class="big-number">B2B SaaS</div><p>Moduły standalone + cross-sell + bundle.</p></div>
+    <div class="card flat"><div class="metric-label">Ownership</div><div class="big-number">Revenue</div><p>Business Owner odpowiada również za drogę do pierwszego powtarzalnego revenue.</p></div>
+  </div>
+</div></section>
+
+<section id="portfolio" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">02 / Portfolio sanity check</div><h2>Zanim dołożę szósty produkt, sprawdzam pięć istniejących.</h2></div><p class="section-intro">Nie po to, żeby obejść zadanie, tylko żeby upewnić się, że kapitał jest alokowany świadomie. Fikcyjne portfolio ma łącznie $21.8M ARR.</p></div>
+  <div class="table-wrap"><table><thead><tr><th>Moduł</th><th>Faza</th><th>ARR</th><th>YoY</th><th>NRR</th><th>Klienci</th><th>ACV</th><th>Adoption</th><th>Attach</th><th>R&D / rok</th></tr></thead><tbody>
+    <tr><td><b>CashFlow</b></td><td class="stage">Scaling</td><td>$8.4M</td><td>46%</td><td>123%</td><td>168</td><td>$50k</td><td>71%</td><td>62%</td><td>$1.8M</td></tr>
+    <tr><td><b>Plan</b></td><td class="stage">PMF</td><td>$5.6M</td><td>39%</td><td>117%</td><td>103</td><td>$54k</td><td>64%</td><td>41%</td><td>$1.4M</td></tr>
+    <tr><td><b>Close</b></td><td class="stage">PMF</td><td>$4.1M</td><td>32%</td><td>111%</td><td>94</td><td>$44k</td><td>76%</td><td>37%</td><td>$1.2M</td></tr>
+    <tr><td><b>Collect</b></td><td class="stage">MVP+</td><td>$2.3M</td><td>62%</td><td>106%</td><td>71</td><td>$32k</td><td>58%</td><td>29%</td><td>$1.0M</td></tr>
+    <tr><td><b>Insights</b></td><td class="stage">MVP</td><td>$1.4M</td><td>18%</td><td>92%</td><td>85</td><td>$16.5k</td><td>34%</td><td>18%</td><td>$0.9M</td></tr>
+  </tbody></table></div>
+  <div class="grid two" style="margin-top:16px"><div class="card"><span class="pill warn">Hipoteza portfolio</span><h3 style="margin-top:12px">Insights: nie kill, tylko możliwy pivot roli w platformie</h3><p>$1.4M ARR oznacza realną wartość. Jednocześnie NRR, adoption i attach rate są wyraźnie słabsze. Sprawdziłbym, czy część capabilities nie powinna stać się shared intelligence layer dla CashFlow, Plan, Collect i przyszłych modułów zamiast osobnego standalone produktu.</p></div><div class="card"><span class="pill ok">Constraint zostaje</span><h3 style="margin-top:12px">Nadal wybieram tylko jeden nowy kierunek</h3><p>Sanity check może zmienić allocation wewnątrz portfolio, ale nie finansuje mi magicznie trzech nowych produktów. Zadanie o wyborze A/B/C pozostaje nienaruszone.</p></div></div>
+</div></section>
+
+<section id="opcje" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">03 / Trzy możliwości</div><h2>Każda opcja jest dobra z innego powodu.</h2></div><p class="section-intro">Celowo nie tworzę oczywistego zwycięzcy. Spend ma największy rynek, Treasury najlepszy fit strategiczny, Working Capital największy potencjał różnicowania.</p></div>
+  <div class="grid three">
+    <article class="card option-card"><span class="pill">Option A</span><h3 style="margin-top:12px">Spend</h3><p>Spend Control & Procurement — approvals, zakupy, vendor management, controls i wydatki.</p><div class="option-meta"><div><b>$1.2B</b><span>reachable market*</span></div><div><b>$75k</b><span>target ACV*</span></div><div><b>$9.0M</b><span>ARR Y3*</span></div></div><div class="proscons"><div><b>Dlaczego tak</b><ul><li>duży rynek</li><li>mocny acquisition wedge</li><li>czytelne value dla CFO</li></ul></div><div><b>Ryzyka</b><ul><li>brutalna konkurencja</li><li>szeroki scope</li><li>cards/payments/integracje</li></ul></div></div></article>
+    <article class="card option-card selected"><span class="pill ok">Option B / start</span><h3 style="margin-top:12px">Treasury</h3><p>Treasury & Liquidity Management — cash positioning, bank visibility, liquidity planning i controlled transfers.</p><div class="option-meta"><div><b>$650M</b><span>reachable market*</span></div><div><b>$95k</b><span>target ACV*</span></div><div><b>$10.5M</b><span>ARR Y3*</span></div></div><div class="proscons"><div><b>Dlaczego tak</b><ul><li>najwyższy CFO pain</li><li>re-use CashFlow</li><li>mocny cross-sell</li></ul></div><div><b>Ryzyka</b><ul><li>bank connectivity</li><li>security</li><li>enterprise complexity</li></ul></div></div></article>
+    <article class="card option-card"><span class="pill">Option C</span><h3 style="margin-top:12px">Working Capital</h3><p>Working Capital Optimisation — rekomendacje łączące AR, AP, cash i cash conversion cycle.</p><div class="option-meta"><div><b>$450M</b><span>reachable market*</span></div><div><b>$60k</b><span>target ACV*</span></div><div><b>$7.5M</b><span>ARR Y3*</span></div></div><div class="proscons"><div><b>Dlaczego tak</b><ul><li>najwyższy platform leverage</li><li>duże differentiation</li><li>wykorzystuje istniejące dane</li></ul></div><div><b>Ryzyka</b><ul><li>WTP niepewne</li><li>jakość danych</li><li>trust / explainability</li></ul></div></div></article>
+  </div><p class="tiny" style="margin-top:10px">*Fikcyjne założenia do modelu decyzyjnego, nie dane rynkowe.</p>
+</div></section>
+
+<section id="konsola" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">04 / Investment Console</div><h2>Score pomaga podjąć decyzję. Nie podejmuje jej za mnie.</h2></div><p class="section-intro">Zmień wagi i zobacz, jak wrażliwy jest wybór na strategię. Obok score zawsze trzymam confidence i evidence — inaczej precyzyjna liczba tylko maskuje zgadywanie.</p></div>
+  <div class="console">
+    <div class="card"><div class="split"><h3>Wagi</h3><button class="btn" id="reset-weights">Przywróć</button></div><div class="weights">
+      <div class="weight-row"><label>Ból klienta / urgency</label><input data-weight="pain" type="range" min="0" max="30" value="15"><span class="weight-value" data-value="pain">15%</span></div>
+      <div class="weight-row"><label>Commercial value / WTP</label><input data-weight="commercial" type="range" min="0" max="30" value="15"><span class="weight-value" data-value="commercial">15%</span></div>
+      <div class="weight-row"><label>Fit do obecnego ICP</label><input data-weight="icp" type="range" min="0" max="30" value="10"><span class="weight-value" data-value="icp">10%</span></div>
+      <div class="weight-row"><label>Expansion / cross-sell</label><input data-weight="expansion" type="range" min="0" max="30" value="10"><span class="weight-value" data-value="expansion">10%</span></div>
+      <div class="weight-row"><label>Acquisition potential</label><input data-weight="acquisition" type="range" min="0" max="30" value="5"><span class="weight-value" data-value="acquisition">5%</span></div>
+      <div class="weight-row"><label>Platform leverage</label><input data-weight="leverage" type="range" min="0" max="30" value="15"><span class="weight-value" data-value="leverage">15%</span></div>
+      <div class="weight-row"><label>Differentiation</label><input data-weight="differentiation" type="range" min="0" max="30" value="10"><span class="weight-value" data-value="differentiation">10%</span></div>
+      <div class="weight-row"><label>Time to revenue</label><input data-weight="revenue" type="range" min="0" max="30" value="10"><span class="weight-value" data-value="revenue">10%</span></div>
+      <div class="weight-row"><label>Koszt walidacji</label><input data-weight="validation" type="range" min="0" max="30" value="5"><span class="weight-value" data-value="validation">5%</span></div>
+      <div class="weight-row"><label>Delivery risk</label><input data-weight="risk" type="range" min="0" max="30" value="5"><span class="weight-value" data-value="risk">5%</span></div>
+    </div></div>
+    <div class="card"><h3>Wynik 1–5</h3><div class="score-list"><div class="score-row"><b>Spend</b><div class="bar"><span data-score-bar="spend"></span></div><strong data-score-label="spend">0.00</strong></div><div class="score-row"><b>Treasury</b><div class="bar"><span data-score-bar="treasury"></span></div><strong data-score-label="treasury">0.00</strong></div><div class="score-row"><b>Working Capital</b><div class="bar"><span data-score-bar="working"></span></div><strong data-score-label="working">0.00</strong></div></div><div class="winner"><span class="metric-label">Aktualny lider</span><h3 id="winner-name">Treasury</h3><p id="winner-expl"></p></div><div style="margin-top:18px"><span class="pill warn">Confidence</span><p style="margin-top:10px">Spend: średni • Treasury: średni-wysoki • Working Capital: niski-średni. Score bez tej informacji nie jest decyzją inwestycyjną.</p></div></div>
+  </div>
+</div></section>
+
+<section id="walidacja" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">05 / Walidacja</div><h2>Najpierw próbuję tanią metodą udowodnić, że się mylę.</h2></div><p class="section-intro">Wraz z rosnącym evidence rośnie dozwolony poziom inwestycji. Pozytywny wywiad jest dowodem; płatny pilot jest mocniejszym dowodem.</p></div>
+  <div class="ladder"><div class="step"><span class="n">01</span><h4>Problem evidence</h4><p>Częstotliwość, koszt, obecny workaround, krytyczność i kto naprawdę odczuwa problem.</p></div><div class="step"><span class="n">02</span><h4>Solution evidence</h4><p>Czy prototyp skraca workflow, poprawia decyzję i daje userowi przewagę nad obecnym procesem?</p></div><div class="step"><span class="n">03</span><h4>Commercial evidence</h4><p>Pricing conversation, design partner, LOI, płatny pilot i dostęp do economic buyera.</p></div><div class="step"><span class="n">04</span><h4>Behavioural evidence</h4><p>Activation, powtarzalne użycie, retencja, breadth/depth i konwersja pilota do umowy.</p></div></div>
+  <div class="grid two" style="margin-top:18px">
+    <div class="card"><h3>Founder-led sales jest częścią discovery</h3><p>Nie czekam, aż Sales „dostanie gotowy produkt”. Buduję listę 30 kont ICP, robię spersonalizowany outreach i na rozmowach przechodzę od problemu do komercyjnego commitmentu.</p><div class="rule"><b>30 kont</b><span>target account list</span></div><div class="rule"><b>12 rozmów</b><span>problem discovery</span></div><div class="rule"><b>5 buyer demos</b><span>CFO / Treasury leadership</span></div><div class="rule"><b>3 design partnerów</b><span>workflow + dane + pilot</span></div><div class="rule"><b>≥1 płatny pilot</b><span>najmocniejszy early signal</span></div></div>
+    <div class="card"><h3>Kill / pivot criteria przed buildem</h3><p>Kryteria definiuję przed eksperymentem, żeby nie negocjować z samym sobą po fakcie.</p><div class="rule"><b>&lt;60% potwierdza problem</b><span>resegmentuj / stop</span></div><div class="rule"><b>Brak dostępu do realnego workflow</b><span>evidence za słabe</span></div><div class="rule"><b>&lt;3 design partnerów</b><span>nie inwestuj w produkcję</span></div><div class="rule"><b>ACV &lt; $60k</b><span>sprawdź economics</span></div><div class="rule"><b>Security/connectivity blocker</b><span>pivot rozwiązania albo stop</span></div></div>
+  </div>
+</div></section>
+
+<section id="timeline" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">06 / Timeline</div><h2>Engineering investment rośnie razem z evidence.</h2></div><p class="section-intro">To nie jest waterfall. Część discovery, sprzedaży, prototypowania i feasibility dzieje się równolegle, ale każdy kolejny poziom kosztu ma swój gate.</p></div>
+  <div class="grid two"><div class="card"><h3>Jak wykorzystuję 4 godziny zadania</h3><div class="timeline"><div class="timeline-item"><h4>0:00–0:20 — ramy i założenia</h4><p>Constraint, portfolio sanity check, buyer/user split.</p></div><div class="timeline-item"><h4>0:20–1:00 — business case</h4><p>Opcje, market/competitor scan, investment scorecard.</p></div><div class="timeline-item"><h4>1:00–1:40 — evidence plan</h4><p>Hipotezy, risk map, sales validation, kill criteria.</p></div><div class="timeline-item"><h4>1:40–2:20 — analityka</h4><p>KPI tree, event taxonomy, success thresholds.</p></div><div class="timeline-item"><h4>2:20–3:35 — build</h4><p>Interaktywny decision cockpit + Treasury vertical slice.</p></div><div class="timeline-item"><h4>3:35–4:00 — synteza</h4><p>Cheatsheet, README, AI transparency, final review.</p></div></div></div>
+  <div class="card"><h3>Jak wyglądałby realny program 12 tygodni</h3><div class="timeline"><div class="timeline-item"><h4>Tydzień 0–1 — Opportunity</h4><p>Portfolio, istniejące dane, segmenty, konkurencja i lista assumptions.</p></div><div class="timeline-item"><h4>Tydzień 1–2 — Problem + sales discovery</h4><p>12 rozmów, 5 buyerów, obecne workflow i koszty problemu.</p></div><div class="timeline-item"><h4>Tydzień 2–4 — Smoke tests + prototype</h4><p>Outreach, pricing conversation, Figma / Vercel / concierge.</p></div><div class="gate"><b>GATE 1:</b> 3 design partnerów + ≥1 płatny pilot albo równoważny commitment.</div><div class="timeline-item"><h4>Tydzień 4–8 — Vertical slice</h4><p>Wąski działający workflow, realne dane, instrumentation, feasibility.</p></div><div class="timeline-item"><h4>Tydzień 8–12 — Pilotaż</h4><p>Activation, retention, workflow depth, user value i pricing.</p></div><div class="gate"><b>GATE 2:</b> scale / pivot / stop. Dopiero po nim productionisation.</div></div></div></div>
+</div></section>
+
+<section id="analityka" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">07 / Product analytics</div><h2>Nie mierzę „czy feature klikają”. Mierzę czy tworzy powtarzalną wartość.</h2></div><p class="section-intro">Przykład dla Treasury. Taksonomia nadaje się do Mixpanela, ale dashboard poniżej jest wyłącznie symulacją sposobu analizy.</p></div>
+  <div class="sim-banner"><b>Symulacja:</b> poniższe wartości nie są realnym wynikiem badań ani pilota. Pokazują, jakie dane chciałbym mieć przed decyzją o skalowaniu.</div>
+  <div class="grid four"><div class="card flat"><div class="metric-label">Activation</div><div class="big-number">76%</div><p>pierwsza konsolidacja cash position ≤7 dni</p></div><div class="card flat"><div class="metric-label">Weekly active accounts</div><div class="big-number">68%</div><p>kont używa core workflow tygodniowo</p></div><div class="card flat"><div class="metric-label">Workflow completion</div><div class="big-number">82%</div><p>rozpoczętych liquidity reviews zakończonych decyzją</p></div><div class="card flat"><div class="metric-label">30-day retention</div><div class="big-number">71%</div><p>pilot accounts wracających do workflow</p></div></div>
+  <div class="events" style="margin-top:16px"><div class="codebox">treasury_workspace_viewed
+bank_connection_started
+bank_connection_completed
+cash_position_viewed
+liquidity_gap_detected
+recommendation_viewed
+recommendation_accepted
+transfer_draft_created
+forecast_scenario_created
+weekly_review_completed</div><div class="codebox">Właściwości:
+account_id
+user_role
+company_size
+segment
+entity_count
+bank_count
+currency_count
+entry_point
+recommendation_type
+forecast_horizon
+pilot_cohort</div></div>
+</div></section>
+
+<section id="ai" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">08 / AI Delivery Economics</div><h2>AI ma skracać learning loop, a nie tylko generować więcej kodu.</h2></div><p class="section-intro">W roli z częstym prototypowaniem koszt i jakość użycia modeli stają się elementem ekonomiki delivery. Zasada: najtańsza wystarczająca inteligencja, eskalacja dopiero przy realnej potrzebie.</p></div>
+  <div class="ai-grid"><div class="card"><h3>Routing pracy</h3><div class="rule"><b>Extraction / klasyfikacja</b><span>mały, szybki model</span></div><div class="rule"><b>Synteza rozmów</b><span>batch + cached context</span></div><div class="rule"><b>Product reasoning</b><span>silniejszy model reasoning</span></div><div class="rule"><b>UI boilerplate</b><span>szybki coding model</span></div><div class="rule"><b>Architektura / trudny debug</b><span>silny coding/reasoning</span></div><div class="rule"><b>Deterministyczne transformacje</b><span>kod zamiast LLM</span></div></div>
+  <div class="card"><h3>Kontrola kosztu i kontekstu</h3><div class="rule"><b>Prompt caching</b><span>stabilne instrukcje i kontekst produktu</span></div><div class="rule"><b>RAG</b><span>pobieraj tylko potrzebną wiedzę</span></div><div class="rule"><b>Scoped context</b><span>diff / plik / komponent zamiast całego repo</span></div><div class="rule"><b>Subagenci</b><span>małe zadania z minimalnym kontekstem</span></div><div class="rule"><b>Escalation policy</b><span>droższy model po niepewności lub failure</span></div><div class="rule"><b>Cost per learning loop</b><span>optymalizuj koszt evidence, nie tokeny dla sportu</span></div></div></div>
+  <div class="notice"><b>Transparentność:</b> ten case jest świadomie tworzony z pomocą AI. AI przyspiesza research, syntezę, kodowanie i testy. Założenia, scoring, kryteria sukcesu, interpretacja evidence i decyzja inwestycyjna pozostają odpowiedzialnością Product Buildera.</div>
+</div></section>
+
+<section id="granica" class="section"><div class="wrap"><div class="section-head"><div><div class="section-kicker">09 / Product Builder ↔ Engineering</div><h2>Working prototype to nie enterprise-ready product.</h2></div><p class="section-intro">Nie potrzebuję twardego handoffu. Potrzebuję jasności, kto redukuje jakie ryzyko i kto pozostaje właścicielem wyniku biznesowego.</p></div><div class="grid two"><div class="card"><span class="pill">Product Builder</span><h3 style="margin-top:12px">Udowadnia, co powinno istnieć</h3><p>Opportunity, customer evidence, pricing, prototype, landing, concierge, vertical slice, instrumentation, design partners i first revenue. Może sam pisać kod, jeśli to najszybszy sposób redukcji niepewności.</p></div><div class="card"><span class="pill">Engineering + Builder</span><h3 style="margin-top:12px">Udowadniają, że może istnieć bezpiecznie w skali</h3><p>Architecture, security, bank connectivity, reliability, observability, performance, data model, maintainability i production readiness. Builder nie znika po utworzeniu epica — nadal odpowiada za wynik.</p></div></div></div></section>
+
+<section id="prototyp" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">10 / Vertical slice</div><h2>Najtańszy działający kawałek Treasury, który może czegoś nauczyć.</h2></div><p class="section-intro">Nie buduję całego TMS. Testuję, czy skonsolidowana widoczność i rekomendacja liquidity action pomagają użytkownikowi podjąć decyzję szybciej i z większą pewnością.</p></div>
+  <div class="prototype"><div class="proto-top"><div><b>Northstar Treasury</b><br><small>Demo Corp • dane syntetyczne</small></div><span class="pill">Vertical slice</span></div><div class="proto-grid"><div class="proto-panel"><div class="split"><div><small>Global cash position</small><div class="big-number" style="margin-top:6px">$4.82M</div></div><div style="text-align:right"><small>7-day projected</small><div class="cash">$4.31M</div></div></div><div class="mini-chart" aria-label="syntetyczny wykres cash position"><span style="height:78%"></span><span style="height:88%"></span><span style="height:72%"></span><span style="height:68%"></span><span style="height:63%"></span><span style="height:57%"></span><span style="height:61%"></span></div><div class="bank-row"><div><b>US Holding / JPMorgan</b><small>USD • surplus</small></div><div class="cash">$2.74M</div></div><div class="bank-row"><div><b>DE Operating / Deutsche Bank</b><small>EUR • projected shortfall in 5 days</small></div><div class="cash">$0.41M</div></div><div class="bank-row"><div><b>UK Operations / Barclays</b><small>GBP • within target range</small></div><div class="cash">$1.67M</div></div></div><div class="proto-panel"><small>Rekomendacja płynnościowa</small><div class="rec"><b>Przenieś równowartość $240k do DE Operating</b><p>Prognoza wskazuje zejście poniżej minimalnego bufora w ciągu 5 dni. US Holding ma wystarczający surplus po transferze.</p><div class="tiny" style="color:#9eabd9">Szacowana uniknięta ekspozycja na finansowanie krótkoterminowe: $4.8k*</div><button id="approve-transfer" class="proto-btn" style="margin-top:12px">Przyjmij rekomendację</button></div><p id="transfer-status" class="tiny" style="color:#aeb8df;margin-top:12px">Akcja tworzy wyłącznie symulowany draft. Production flow wymagałby approval policy, uprawnień, audytu i bezpiecznej integracji bankowej.</p></div></div></div>
+  <p class="tiny" style="margin-top:10px">*Fikcyjna symulacja. Celem jest pokazanie hipotezy produktu, nie obiecanie realnej oszczędności.</p>
+</div></section>
+
+<section id="konkurencja" class="section"><div class="wrap"><div class="section-head"><div><div class="section-kicker">11 / Konkurencja</div><h2>Realne punkty odniesienia + jawnie fikcyjne benchmarki.</h2></div><p class="section-intro">Research służy do zrozumienia kategorii i standardu rynkowego, nie do udawania pełnego market study w czterogodzinnym case.</p></div><div class="grid three"><div class="card"><span class="pill ok">Realny</span><h3 style="margin-top:12px">Ramp</h3><p>Benchmark dla spend management: cards, expenses, procurement, AP i controls. Pokazuje szerokość kategorii i koszt wejścia w „Spend”.</p></div><div class="card"><span class="pill ok">Realny</span><h3 style="margin-top:12px">Kyriba</h3><p>Benchmark Treasury: cash visibility, liquidity planning, bank connectivity, forecasting i treasury workflows.</p></div><div class="card"><span class="pill ok">Realny</span><h3 style="margin-top:12px">HighRadius</h3><p>Benchmark dla AR/AP forecasting, receivables i working-capital-oriented intelligence.</p></div><div class="card"><span class="pill warn">Fikcyjny</span><h3 style="margin-top:12px">SpendPilot</h3><p>Mocny mid-market procurement automation, słaba cash intelligence. Użyty wyłącznie do pozycjonowania.</p></div><div class="card"><span class="pill warn">Fikcyjny</span><h3 style="margin-top:12px">LiquiCore</h3><p>Enterprise bank connectivity i cash positioning, ale ciężkie wdrożenia. Fikcyjny benchmark dla Treasury.</p></div><div class="card"><span class="pill warn">Fikcyjny</span><h3 style="margin-top:12px">FlowSignal</h3><p>AI working capital recommendations z problemem trust. Fikcyjny benchmark dla Option C.</p></div></div></div></section>
+
+<section id="cheatsheet" class="section"><div class="wrap">
+  <div class="section-head"><div><div class="section-kicker">12 / Cheatsheet</div><h2>Jedna plansza do samodzielnego przeczytania i późniejszej rozmowy.</h2></div><button class="btn" id="copy-cheat">Kopiuj skrót</button></div>
+  <div class="cheat"><div class="cheat-grid">
+    <div class="cheat-block"><div class="num">01 / CASE</div><h4>Constraint</h4><p>5 istniejących modułów, 3 nowe opcje, capacity na jedną. Cel: następna inwestycja o najwyższym expected enterprise value.</p></div>
+    <div class="cheat-block"><div class="num">02 / BUYER</div><h4>CFO ≠ jedyny użytkownik</h4><p>CFO kupuje outcome. Treasury, FP&A, Controller i AR/AP muszą dostawać powtarzalną wartość operacyjną.</p></div>
+    <div class="cheat-block"><div class="num">03 / PORTFOLIO</div><h4>Sanity check</h4><p>Insights ma słabsze metrics, ale realne ARR. Hipoteza: shared intelligence layer, nie automatyczny kill.</p></div>
+    <div class="cheat-block"><div class="num">04 / OPTIONS</div><h4>Spend / Treasury / WC</h4><p>Spend = TAM. Treasury = strategic fit. Working Capital = differentiation. Brak sztucznie słabej opcji.</p></div>
+    <div class="cheat-block"><div class="num">05 / DECISION</div><h4>Treasury first</h4><p>Najlepsze połączenie pain, WTP, cross-sell, leverage i time-to-revenue przy obecnym confidence.</p></div>
+    <div class="cheat-block"><div class="num">06 / EVIDENCE</div><h4>Nie buduj od razu</h4><p>Problem → solution → commercial → behavioural. Rosnący evidence odblokowuje rosnący investment.</p></div>
+    <div class="cheat-block"><div class="num">07 / SALES</div><h4>Founder-led sales</h4><p>30 kont → 12 rozmów → 5 buyer demos → 3 design partnerów → ≥1 płatny pilot.</p></div>
+    <div class="cheat-block"><div class="num">08 / METRICS</div><h4>Value, nie clicks</h4><p>Activation, weekly active accounts, workflow completion, retention, conversion pilot→paid, ACV i expansion.</p></div>
+    <div class="cheat-block"><div class="num">09 / GATES</div><h4>Scale / pivot / stop</h4><p>Progi definiowane przed eksperymentem. Brak komercyjnego evidence blokuje produkcyjny build.</p></div>
+    <div class="cheat-block"><div class="num">10 / AI</div><h4>Delivery economics</h4><p>Routing, caching, RAG, scoped context, subagenci, kod zamiast LLM dla zadań deterministycznych.</p></div>
+    <div class="cheat-block"><div class="num">11 / BUILD</div><h4>Builder ↔ Engineering</h4><p>Builder udowadnia, co ma powstać. Engineering współtworzy enterprise readiness. Business ownership nie znika.</p></div>
+    <div class="cheat-block"><div class="num">12 / ANCHOR</div><h4>Zdanie przewodnie</h4><p class="anchor">„Nie wybieram produktu do zbudowania. Wybieram produkt, który zasługuje na kolejną inwestycję w dowody.”</p></div>
+  </div></div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap"><div class="split"><span>Product Builder case • Northstar Finance Cloud</span><span>Cała ekonomika firmy jest fikcyjna i jawnie oznaczona jako założenie.</span></div></div></footer>
+<script src="app.js"></script>
+</body></html>

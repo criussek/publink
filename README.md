@@ -10,23 +10,49 @@ Na potrzeby zadania zakładam:
 
 - głównym decydentem budżetowym jest CFO,
 - użytkownikami są zespoły finansowe,
-- Product Builder odpowiada nie tylko za produkt, ale też za pierwszą sprzedaż i drogę do przychodu,
+- Product Builder odpowiada za wynik biznesowy produktu oraz aktywnie współtworzy pierwszą strategię GTM,
+- Product Builder może budować prototyp sam, ale w enterprise zwykle robi to wspólnie z Product Designerem / UX/UI, Engineeringiem lub innymi osobami potrzebnymi do redukcji konkretnego ryzyka,
+- AI jest normalnym narzędziem do przyspieszania researchu, prototypów, kodu i iteracji,
 - wszystkie nazwy produktów i dane biznesowe są fikcyjne.
 
-## Mój tok działania
+## Tok działania
 
-1. **Portfolio check** — zanim dokładam kolejny produkt, sprawdzam czy obecne portfolio nie zmienia kontekstu decyzji.
-2. **Wybór kierunku** — porównuję trzy proste opcje: Wydatki, Płynność i Kapitał obrotowy.
-3. **Walidacja problemu** — rozmawiam równolegle z użytkownikiem, CFO i Engineeringiem.
-4. **Mały prototyp** — buduję tylko tyle, ile potrzeba, żeby odpowiedzieć na najważniejsze pytanie.
-5. **Pierwsza sprzedaż** — sam próbuję zdobyć piloty i sprawdzić gotowość do zapłaty.
-6. **Bramka decyzji** — rozwijamy, zmieniamy kierunek albo zatrzymujemy temat.
+1. **Kontekst portfela** — sprawdzam, czy obecne produkty zmieniają sens inwestowania w kolejny kierunek.
+2. **Wybór opcji** — tworzę trzy proste możliwości: Wydatki, Płynność i Kapitał obrotowy. Jako pierwszą sprawdzam Płynność.
+3. **Rozmowy i discovery** — dobieram rozmówców z obecnych klientów, CRM, CSM / Support oraz kilku firm spoza obecnej bazy; każdą rozmowę zapisuję w ustrukturyzowany sposób i syntetyzuję wspólne wzorce.
+4. **MVP** — buduję tylko tyle, ile potrzeba, żeby sprawdzić kluczowy workflow na czymś działającym.
+5. **GTM i pierwsze wdrożenia** — Product Builder współtworzy ICP, value proposition, demo, ofertę pilota i bierze udział w pierwszych rozmowach, ale nie próbuje zastępować Sales.
+6. **Decyzja inwestycyjna** — rozwijamy, zmieniamy kierunek albo zatrzymujemy na podstawie problemu, adopcji, retencji, wartości, monetyzacji i ryzyk enterprise.
 
-W tej wersji jako pierwszy kierunek do sprawdzenia wybieram **Płynność**. To nie jest jeszcze decyzja o pełnej budowie produktu.
+## Uproszczenie na potrzeby zadania
 
-## AI
+Główna strona celowo pokazuje ograniczoną liczbę danych. W prawdziwym enterprise SaaS model byłby szerszy i obejmował m.in.:
 
-AI służy tutaj jako narzędzie do szybszego researchu, prototypowania i kodowania. Przy pracy z modelami stosuję m.in. prosty routing zadań, cache stałego kontekstu, RAG dla większej dokumentacji i ograniczanie kontekstu do potrzebnego fragmentu kodu. Decyzje biznesowe i interpretacja wyników pozostają po stronie Product Buildera.
+- activation i time-to-value,
+- adopcję na poziomie kont i ról,
+- retention / kohorty,
+- conversion pilot → paid, ACV, pipeline i expansion,
+- integracje, security, support load, SLA i reliability,
+- wpływ na NRR, cross-sell i całe portfolio.
+
+Pełniejszy model znajduje się w `enterprise-model.svg`.
+
+## AI i warsztat
+
+AI służy do skrócenia czasu od pytania do kolejnej iteracji. Korzystam m.in. z:
+
+- prostego routingu zadań między szybszymi i mocniejszymi modelami,
+- cache / ograniczania powtarzanego kontekstu,
+- pracy na konkretnym pliku lub diffie zamiast całego repo,
+- subagentów do wyspecjalizowanych zadań,
+- dodatkowych pluginów / skills,
+- eksperymentalnych narzędzi takich jak Caveman do redukcji nadmiarowego użycia tokenów.
+
+Przykładowe źródła narzędzi:
+
+- https://github.com/hashgraph-online/awesome-codex-plugins
+- https://github.com/nsEytgXm/subagents_configs
+- https://github.com/juliusbrussee/caveman
 
 ## Uruchomienie
 

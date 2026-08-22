@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Płynność — przykładowa dokumentacja produktu</title>
+  <meta name="description" content="Interaktywny przykład dokumentacji opcji Płynność, oparty na strukturze szablonów produktowych używanych w Dayforce." />
+  <link rel="stylesheet" href="liquidity-docs.css" />
+</head>
+<body>
+<header class="docs-topbar">
+  <div class="docs-topbar-inner">
+    <a class="back-link" href="index.html#krok4">← Wróć do case'u</a>
+    <div class="docs-title"><b>Płynność</b><span>przykładowa dokumentacja</span></div>
+    <div class="docs-progress"><span id="progress-label">1 / 13</span><div class="progress-track"><i id="progress-bar"></i></div></div>
+  </div>
+</header>
+
+<div class="docs-shell">
+  <aside class="docs-sidebar" aria-label="Struktura dokumentacji">
+    <div class="sidebar-intro">
+      <span class="eyebrow">Dayforce-style product docs</span>
+      <h1>Płynność</h1>
+      <p>Przykład, jak poprowadziłbym dokumentację wybranej opcji od problemu do wdrożenia i późniejszej oceny.</p>
+    </div>
+    <nav class="doc-tree" id="doc-tree">
+      <button class="doc-link active" data-doc="overview"><span>01</span><b>Development phase</b><small>overview projektu</small></button>
+      <button class="doc-link" data-doc="meeting"><span>02</span><b>Meeting notes</b><small>rozmowy i kontekst</small></button>
+      <div class="tree-group">
+        <button class="doc-link" data-doc="problem"><span>03</span><b>Problem discovery / Research</b><small>problem i inwestycja</small></button>
+        <button class="doc-link child" data-doc="market"><span>↳</span><b>Competitor & Market</b></button>
+        <button class="doc-link child" data-doc="feedback"><span>↳</span><b>Feedback & Data</b></button>
+        <button class="doc-link child" data-doc="stakeholders"><span>↳</span><b>Stakeholder Motivation</b></button>
+      </div>
+      <button class="doc-link" data-doc="solution"><span>04</span><b>Solution discovery</b><small>wybór rozwiązania</small></button>
+      <button class="doc-link" data-doc="stories"><span>05</span><b>Stories, AC & Flows</b><small>przykładowy scope</small></button>
+      <button class="doc-link" data-doc="validation"><span>06</span><b>Solution validation</b><small>jak sprawdzam rozwiązanie</small></button>
+      <button class="doc-link" data-doc="tech"><span>07</span><b>Tech investigations</b><small>ryzyka techniczne</small></button>
+      <button class="doc-link" data-doc="gtm"><span>08</span><b>GTM strategy</b><small>pierwsze wdrożenia</small></button>
+      <button class="doc-link" data-doc="metrics"><span>09</span><b>Success metrics</b><small>co oznacza sukces</small></button>
+      <button class="doc-link" data-doc="handover"><span>10</span><b>Product Handover</b><small>KNOW / SAY / SHOW</small></button>
+      <button class="doc-link" data-doc="tour"><span>11</span><b>Product tour</b><small>jak pokazać produkt</small></button>
+      <button class="doc-link" data-doc="leftout"><span>12</span><b>Ideas left out</b><small>świadomy brak scope'u</small></button>
+      <button class="doc-link" data-doc="post"><span>13</span><b>Post development</b><small>feedback i retrospekcja</small></button>
+    </nav>
+  </aside>
+
+  <main class="docs-content">
+    <section class="case-note">
+      <div><b>Dlaczego osobny dokument?</b><p>Główny case ma pokazać tok podejmowania decyzji. Ta część pokazuje drugi aspekt pracy Product Buildera: jak porządkuję informacje, decyzje, feedback, scope i wiedzę wokół produktu.</p></div>
+      <div><b>Celowo uproszczone</b><p>Nie wypełniam każdego pola „na siłę”. W realnym enterprise zakres dokumentacji rośnie wraz z zespołem, ryzykiem, liczbą klientów i etapem produktu.</p></div>
+      <div><b>Źródło struktury</b><p>Układ opiera się na szablonach i hierarchii dokumentacji produktowej, których używałem przy pracy nad produktami enterprise w Dayforce.</p></div>
+    </section>
+
+    <article class="doc-page active" id="doc-overview" data-index="1">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Development phase</span><h2>Płynność — overview projektu</h2><p class="doc-lead">Krótki opis bez technicznego żargonu, cel, deliverables, ograniczenia i osoby potrzebne do podjęcia kolejnych decyzji.</p></div><span class="status-pill">Scope: discovery → pilot</span></div>
+      <div class="callout blue"><b>Opis</b><p>Moduł „Płynność” daje CFO i zespołowi finansowemu wspólny widok środków na wielu rachunkach i podmiotach, pokazuje krótką prognozę oraz sygnalizuje ryzyko spadku poniżej ustalonego bufora.</p></div>
+      <div class="doc-grid three">
+        <section><h3>Objective</h3><p>Sprawdzić, czy szybsza widoczność płynności tworzy wystarczającą wartość dla obecnych klientów CashFlow, żeby uzasadnić dalszą inwestycję.</p></section>
+        <section><h3>Deliverables</h3><ul><li>synteza problemu i segmentu,</li><li>działające MVP,</li><li>3–5 partnerów pilotażowych,</li><li>pierwsza hipoteza GTM i pricingu,</li><li>decyzja rozwijamy / zmieniamy / stop.</li></ul></section>
+        <section><h3>Constraints</h3><ul><li>jedna z trzech opcji może wejść dalej,</li><li>nie budujemy pełnego TMS,</li><li>najpierw read-only / bez transferów,</li><li>dane i bezpieczeństwo mogą zmienić scope.</li></ul></section>
+      </div>
+      <div class="doc-grid two">
+        <section><h3>Project team — przykładowo</h3><div class="chips"><span>Product Builder</span><span>Product Designer / UX</span><span>Tech Lead</span><span>Backend</span><span>Frontend</span><span>Security</span><span>Product Marketing / Sales</span></div></section>
+        <section><h3>Status checklist</h3><div class="checklist"><label><input type="checkbox" checked disabled> Problem statement zdefiniowany</label><label><input type="checkbox" disabled> Problem zweryfikowany</label><label><input type="checkbox" disabled> Solution proposal zatwierdzony</label><label><input type="checkbox" disabled> Scope MVP zamknięty</label></div></section>
+      </div>
+    </article>
+
+    <article class="doc-page" id="doc-meeting" data-index="2">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Meeting notes</span><h2>Jak dokumentuję rozmowy</h2><p class="doc-lead">Nie potrzebuję perfekcyjnego protokołu. Potrzebuję takiego zapisu, żeby później można było porównać rozmowy i zobaczyć wzorce.</p></div></div>
+      <div class="meeting-card">
+        <div class="meeting-meta"><span>Przykładowa rozmowa #04</span><b>Finance Director • klient CashFlow • 6 podmiotów / 12 rachunków</b><small>Dane przykładowe na potrzeby case'u</small></div>
+        <div class="doc-grid two">
+          <section><h3>Current workflow</h3><p>W każdy poniedziałek dwie osoby pobierają salda z banków, sklejają je w arkuszu i ręcznie nanoszą planowane płatności. Całość zajmuje około 60–90 minut.</p></section>
+          <section><h3>Problem / impact</h3><p>Największy problem nie jest w samym raporcie, tylko w opóźnieniu. Finance Director dowiaduje się o potrzebie przesunięcia środków zbyt późno.</p></section>
+          <section><h3>Workaround</h3><p>Excel + logowanie do portali bankowych + wiadomości na Teams. Proces działa, ale opiera się na ręcznej pracy i wiedzy jednej osoby.</p></section>
+          <section><h3>Po demo</h3><p>Najbardziej wartościowy okazał się alert z wyprzedzeniem. Klient nie potrzebuje jeszcze wykonywania przelewu — chce najpierw ufać danym.</p></section>
+        </div>
+        <div class="quote">„Jeśli rano widzę, że za pięć dni będzie problem, to już jest coś, za co warto zapłacić. Nie muszę z tego miejsca robić przelewu.” <small>— cytat fikcyjny, pokazujący format zapisu insightu</small></div>
+      </div>
+      <div class="callout yellow"><b>Po każdej rozmowie zapisuję</b><p>kto mówił • obecny proces • pain points • częstotliwość • koszt / konsekwencje • workaround • ważne cytaty • reakcja na koncept • obiekcje • kolejny krok.</p></div>
+    </article>
+
+    <article class="doc-page" id="doc-problem" data-index="3">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Problem discovery / Research</span><h2>Jaki problem warto rozwiązać?</h2><p class="doc-lead">Ta strona nie zbiera całego researchu. Ma podsumować, co z niego wynika i dlaczego temat zasługuje albo nie zasługuje na dalszą inwestycję.</p></div></div>
+      <div class="problem-statement"><span>Problem statement</span><h3>Zespoły finansowe w firmach z wieloma rachunkami i podmiotami składają obraz płynności ręcznie, przez co decyzje są wolniejsze i łatwiej przeoczyć przyszły niedobór.</h3></div>
+      <div class="doc-grid three">
+        <section><h3>Dlaczego teraz?</h3><p>Opcja jest blisko istniejącego CashFlow, więc możemy wykorzystać obecnych klientów, dane i wiedzę domenową zamiast startować od zera.</p></section>
+        <section><h3>Leading signals</h3><ul><li>częstotliwość ręcznego liquidity review,</li><li>czas procesu,</li><li>liczba źródeł danych,</li><li>konsekwencje opóźnienia,</li><li>chęć wejścia w pilot.</li></ul></section>
+        <section><h3>Moja rekomendacja teraz</h3><p>Inwestować w walidację problemu i MVP. Jeszcze nie w pełny produkt i nie w szeroką architekturę bankową.</p></section>
+      </div>
+      <h3 class="subhead">Metody researchu</h3>
+      <div class="method-row"><span>Customer interviews</span><span>CRM / Sales</span><span>CSM / Support</span><span>Usage data</span><span>Competitor scan</span><span>Tech feasibility</span></div>
+    </article>
+
+    <article class="doc-page" id="doc-market" data-index="3">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Competitor & Market analysis</span><h2>Jak patrzę na rynek</h2><p class="doc-lead">Nie robię 50-slajdowej analizy konkurencji przed pierwszą rozmową. Szukam standardu rynku, luk i sposobu pozycjonowania kategorii.</p></div></div>
+      <div class="doc-grid three">
+        <section><span class="mini-label">Benchmark 1</span><h3>Kyriba</h3><p>Punkt odniesienia dla rozbudowanego treasury / liquidity management. Pokazuje, jak daleko może rosnąć kategoria.</p></section>
+        <section><span class="mini-label">Benchmark 2</span><h3>Trovata / GTreasury</h3><p>Punkty odniesienia dla widoczności cash, integracji bankowych i codziennej pracy zespołów treasury.</p></section>
+        <section><span class="mini-label">Alternatywa</span><h3>Excel + bank portals</h3><p>Najważniejszym konkurentem MVP może być nie inny SaaS, tylko proces, który „wystarczająco działa” i nic nie kosztuje poza czasem.</p></section>
+      </div>
+      <div class="compare-mini"><div><b>Pytanie</b><b>Co chcę zrozumieć</b></div><div><span>Pozycjonowanie</span><span>Czy sprzedaje się visibility, control, forecasting czy risk reduction?</span></div><div><span>Zakres</span><span>Co jest absolutnym minimum, a co pojawia się dopiero w dojrzałym TMS?</span></div><div><span>Pricing</span><span>Czy wartość rośnie wraz z liczbą rachunków, podmiotów, użytkowników czy modułów?</span></div><div><span>Gap</span><span>Gdzie adjacency do CashFlow daje nam coś, czego nie ma standalone tool?</span></div></div>
+    </article>
+
+    <article class="doc-page" id="doc-feedback" data-index="3">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Feedback & Data</span><h2>Jedna karta feedbacku = jeden porównywalny sygnał</h2><p class="doc-lead">W szablonie zapisuję nie tylko „co klient powiedział”, ale też kontekst, metodę zebrania i wagę sygnału.</p></div></div>
+      <div class="feedback-form">
+        <div><span>Customer</span><b>Northwind Group — przykład</b></div><div><span>Representing size</span><b>2 000 pracowników / 6 podmiotów</b></div><div><span>Method</span><b>45-min video interview + prototype test</b></div><div><span>Source</span><b>Finance Director + Treasury Analyst</b></div>
+      </div>
+      <div class="doc-grid two">
+        <section><h3>Feedback</h3><ul><li>największa wartość: widoczność wszystkich sald w jednym miejscu,</li><li>alert powinien pokazywać „dlaczego”,</li><li>7 dni wystarcza do pierwszego pilota,</li><li>write access do banku nie jest warunkiem MVP,</li><li>największa obiekcja: aktualność i wiarygodność danych.</li></ul></section>
+        <section><h3>Jak to syntetyzuję?</h3><ul><li>tag: manual consolidation,</li><li>tag: data trust,</li><li>tag: early warning,</li><li>tag: bank integrations,</li><li>tag: willingness to pilot.</li></ul><p class="muted">Po serii rozmów liczę częstotliwość tematów i patrzę, czy różnią się między segmentami / rolami.</p></section>
+      </div>
+    </article>
+
+    <article class="doc-page" id="doc-stakeholders" data-index="3">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Stakeholder Motivation Analysis</span><h2>Kto ma interes w tym produkcie?</h2><p class="doc-lead">W enterprise jeden workflow dotyka więcej osób niż tylko użytkownika ekranu. Ich cele mogą się wzajemnie wzmacniać albo konfliktować.</p></div></div>
+      <div class="stakeholder-table">
+        <div class="header"><span>Stakeholder</span><span>Motywacja / cel</span><span>Ryzyko / konflikt</span></div>
+        <div><b>CFO</b><span>kontrola płynności i redukcja ryzyka</span><span>nie chce kolejnego narzędzia bez mierzalnej wartości</span></div>
+        <div><b>Treasury / Finance Manager</b><span>mniej ręcznego składania danych, szybsza decyzja</span><span>nie zaufa danym, jeśli refresh jest nieprzewidywalny</span></div>
+        <div><b>Controller / FP&A</b><span>spójny obraz rzeczywistości vs plan</span><span>może oczekiwać innego modelu forecastu</span></div>
+        <div><b>IT / Security</b><span>bezpieczne integracje i audyt</span><span>może wydłużyć onboarding</span></div>
+        <div><b>CSM / Implementation</b><span>szybkie wdrożenie i jasna odpowiedzialność</span><span>zbyt wiele konfiguracji zwiększy koszt obsługi</span></div>
+        <div><b>Sales</b><span>wyraźne value proposition i expansion story</span><span>niejasny pricing utrudni sprzedaż</span></div>
+      </div>
+    </article>
+
+    <article class="doc-page" id="doc-solution" data-index="4">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Solution discovery</span><h2>Od problemu do preferowanego rozwiązania</h2><p class="doc-lead">Najpierw zestawiam potrzeby, current state, wymagania i kilka możliwych rozwiązań. Dopiero później wybieram koncept do testu.</p></div></div>
+      <div class="doc-grid two">
+        <section><h3>Current state</h3><p>Bank portals → eksport / kopiowanie danych → Excel → planowane płatności → ręczne szukanie ryzyka → Teams / email → decyzja.</p></section>
+        <section><h3>Główne ograniczenia</h3><ul><li>brak wspólnego źródła prawdy,</li><li>dane aktualizowane w różnym rytmie,</li><li>proces zależny od konkretnej osoby,</li><li>problem zauważany zamiast prognozowany.</li></ul></section>
+      </div>
+      <h3 class="subhead">Rozważane koncepty</h3>
+      <div class="concept-grid">
+        <div><span>A</span><h3>Tygodniowy email digest</h3><p>Najtańszy test komunikacji problemu, ale mało interaktywny.</p><small>+ bardzo szybki • − ograniczona wartość</small></div>
+        <div class="chosen"><span>B</span><h3>Liquidity workspace</h3><p>Salda + 7-dniowa prognoza + buffer alert + szkic decyzji.</p><small>+ testuje workflow • + łatwe demo • − wymaga realnych danych</small></div>
+        <div><span>C</span><h3>Pełny Treasury Suite</h3><p>Transfers, FX, approvals, forecasting, policies.</p><small>+ wysoka wartość • − zbyt duży koszt przed walidacją</small></div>
+      </div>
+      <div class="callout green"><b>Rekomendacja</b><p>Koncept B. Daje wystarczająco dużo produktu, żeby sprawdzić zachowanie użytkownika, ale nie wymaga udawania, że już znamy docelowy zakres całej kategorii.</p></div>
+    </article>
+
+    <article class="doc-page" id="doc-stories" data-index="5">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Stories, Acceptance criteria & Flows</span><h2>Jak zamieniam MVP w przykładowe historie</h2><p class="doc-lead">Na tym etapie pokazuję tylko kilka kluczowych stories — wystarczających do wspólnego zrozumienia scope'u.</p></div></div>
+      <div class="story">
+        <div class="story-id">US101</div><div><h3>Widok wszystkich sald</h3><p><b>As a</b> Treasury Manager <b>I want</b> zobaczyć salda wszystkich podłączonych rachunków w jednym miejscu <b>so that</b> nie muszę rozpoczynać liquidity review od ręcznej konsolidacji.</p><h4>Acceptance criteria</h4><ul><li>widzę rachunek, podmiot, walutę, saldo i czas ostatniej aktualizacji,</li><li>mogę filtrować po podmiocie i walucie,</li><li>brak aktualnych danych jest jawnie oznaczony,</li><li>system nie udaje świeżości danych, jeśli integracja nie odpowiedziała.</li></ul></div>
+      </div>
+      <div class="story">
+        <div class="story-id">US102</div><div><h3>Alert bufora płynności</h3><p><b>As a</b> Finance Director <b>I want</b> zobaczyć, że prognozowane saldo spadnie poniżej ustalonego bufora <b>so that</b> mogę zareagować zanim powstanie problem.</p><h4>Acceptance criteria</h4><ul><li>alert pokazuje datę, podmiot i przewidywany poziom,</li><li>użytkownik widzi, jakie dane wpływają na sygnał,</li><li>alert może zostać oznaczony jako przejrzany.</li></ul></div>
+      </div>
+      <div class="flow-line"><span>Podłączone dane</span><i>→</i><span>Liquidity overview</span><i>→</i><span>Alert</span><i>→</i><span>Review</span><i>→</i><span>Szkic decyzji</span></div>
+    </article>
+
+    <article class="doc-page" id="doc-validation" data-index="6">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Solution validation</span><h2>Jak sprawdzam rozwiązanie</h2><p class="doc-lead">Szablon daje listę możliwych metod. Wybieram te, które odpowiadają na ryzyka tego produktu — nie robię wszystkich.</p></div></div>
+      <div class="validation-grid">
+        <section class="selected-method"><span>Wybrane</span><h3>Customer interviews</h3><p>Czy problem i język rozwiązania są prawdziwe? Czy użytkownicy rozpoznają workflow jako swój?</p></section>
+        <section class="selected-method"><span>Wybrane</span><h3>Prototype testing</h3><p>Czy użytkownik rozumie salda, prognozę i alert bez długiego tłumaczenia?</p></section>
+        <section class="selected-method"><span>Wybrane</span><h3>Design partner pilot</h3><p>Czy rozwiązanie działa na realnych danych i wraca do regularnego procesu klienta?</p></section>
+        <section><span>Nie teraz</span><h3>A/B testing</h3><p>Za wcześnie — brak wystarczającego wolumenu i zbyt duża zmienność między klientami.</p></section>
+        <section><span>Wsparcie</span><h3>Competitor analysis</h3><p>Do standardów kategorii i pozycjonowania, ale nie jako dowód problemu u naszych klientów.</p></section>
+        <section><span>Wsparcie</span><h3>Survey</h3><p>Może potwierdzić skalę już poznanego problemu; nie zastępuje discovery.</p></section>
+      </div>
+      <div class="callout yellow"><b>Kryterium przejścia dalej</b><p>Co najmniej 3 klientów chce przetestować rozwiązanie na realnym procesie, a wyniki prototype testu nie wskazują, że sam koncept jest niezrozumiały.</p></div>
+    </article>
+
+    <article class="doc-page" id="doc-tech" data-index="7">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Tech investigations</span><h2>Jakie ryzyka sprawdzam z Engineeringiem</h2><p class="doc-lead">Nie projektuję tutaj architektury. Zapisuję pytania, które mogą zmienić scope, koszt lub sens całego produktu.</p></div></div>
+      <div class="risk-board">
+        <div><span>Data</span><h3>Skąd bierzemy salda?</h3><ul><li>istniejący provider / agregator?</li><li>bezpośrednie bank API?</li><li>manual CSV jako fallback w pilocie?</li></ul></div>
+        <div><span>Freshness</span><h3>Jak świeże muszą być dane?</h3><ul><li>real-time czy kilka refreshy dziennie?</li><li>jak pokazujemy opóźnienie?</li><li>co robimy przy błędzie?</li></ul></div>
+        <div><span>Security</span><h3>Jak ograniczamy ryzyko?</h3><ul><li>read-only credentials,</li><li>permissions per entity/account,</li><li>audit trail,</li><li>secrets management.</li></ul></div>
+        <div><span>Forecast</span><h3>Co naprawdę prognozujemy?</h3><ul><li>tylko known inflows/outflows?</li><li>CashFlow jako źródło?</li><li>jak pokazujemy confidence?</li></ul></div>
+        <div><span>Scale</span><h3>Co się dzieje przy 100+ rachunkach?</h3><ul><li>latency, pagination, aggregation,</li><li>multi-currency,</li><li>rate limits.</li></ul></div>
+        <div><span>Ownership</span><h3>Co jest poza MVP?</h3><ul><li>bank write operations,</li><li>full transfer workflow,</li><li>FX execution,</li><li>advanced approval policies.</li></ul></div>
+      </div>
+    </article>
+
+    <article class="doc-page" id="doc-gtm" data-index="8">
+      <div class="doc-head"><div><span class="template-pill">Szablon: GTM strategy</span><h2>Pierwszy GTM dla „Płynności”</h2><p class="doc-lead">W Dayforce GTM był osobnym obszarem prowadzonym z Product Marketingiem. Tutaj pokazuję tylko elementy potrzebne Builderowi przy pierwszych klientach.</p></div></div>
+      <div class="gtm-doc-grid">
+        <section><span>ICP</span><h3>Obecni klienci CashFlow</h3><p>Firmy z wieloma podmiotami, rachunkami i regularnym procesem liquidity review.</p></section>
+        <section><span>Value prop</span><h3>„Zobacz problem zanim stanie się problemem.”</h3><p>Jedno miejsce do bieżącej pozycji gotówkowej i krótkiego forward-looking review.</p></section>
+        <section><span>Demo story</span><h3>3 minuty</h3><p>Saldo → prognoza → Niemcy poniżej bufora → szczegóły → szkic decyzji.</p></section>
+        <section><span>Pilot</span><h3>4–6 tygodni</h3><p>Wybrane podmioty i rachunki, 1–2 użytkowników, cotygodniowy feedback.</p></section>
+        <section><span>Pricing hypothesis</span><h3>Do sprawdzenia</h3><p>Add-on do CashFlow vs osobny moduł. Nie zamykam modelu cenowego przed rozmowami.</p></section>
+        <section><span>Sales enablement</span><h3>Co musi istnieć</h3><p>one-liner, 3-min demo, objection FAQ, ICP checklist, pilot offer i jasne „czego jeszcze nie ma”.</p></section>
+      </div>
+      <div class="callout green"><b>Rola Product Buildera</b><p>Jest przy pierwszych rozmowach, żeby iterować problem framing, demo, scope pilota i argumentację. Nie po to, żeby na stałe zastąpić Sales.</p></div>
+    </article>
+
+    <article class="doc-page" id="doc-metrics" data-index="9">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Success metrics</span><h2>Co oznacza sukces i kiedy to sprawdzam</h2><p class="doc-lead">Oryginalny sposób pracy zakłada time-bound success metrics i plan follow-upu. Tutaj używam prostych progów roboczych do podjęcia decyzji.</p></div></div>
+      <div class="metric-period">
+        <h3>Do końca pilota — 6 tygodni</h3>
+        <div class="metric-cards"><div><b>≥ 3</b><span>aktywnych partnerów pilotażowych</span></div><div><b>≥ 60%</b><span>cotygodniowych liquidity reviews wykonywanych w produkcie</span></div><div><b>&lt; 10 min</b><span>czas od wejścia do zrozumienia pozycji i ryzyka</span></div><div><b>≥ 2</b><span>klientów gotowych przejść do rozmowy o płatnym wdrożeniu</span></div></div>
+      </div>
+      <div class="metric-period">
+        <h3>Po 3–6 miesiącach — jeśli rozwijamy</h3>
+        <div class="metric-cards"><div><b>Adopcja</b><span>% aktywnych kont / ról i regularność workflow</span></div><div><b>Retencja</b><span>kohorty W4 / W8 / W12 i konta wracające do review</span></div><div><b>Monetyzacja</b><span>pilot → paid, ACV, attach do CashFlow, expansion</span></div><div><b>Enterprise</b><span>time-to-implement, support load, reliability, security blockers</span></div></div>
+      </div>
+      <div class="callout blue"><b>Follow-up</b><p>Dashboard ilościowy + cotygodniowe rozmowy podczas pilota + review po 4/8/12 tygodniach. Metryki mogą się zmienić, jeśli odkryjemy, że inny sygnał lepiej reprezentuje wartość.</p></div>
+    </article>
+
+    <article class="doc-page" id="doc-handover" data-index="10">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Product Handover</span><h2>KNOW / SAY / SHOW</h2><p class="doc-lead">To jeden z najbardziej praktycznych szablonów: osoba, która ma potem sprzedawać, wdrażać albo wspierać produkt, powinna wiedzieć co to jest, umieć o tym powiedzieć i potrafić to pokazać.</p></div></div>
+      <div class="kss-grid">
+        <section><div class="kss-letter">K</div><h3>KNOW</h3><ul><li><b>Feature:</b> Płynność</li><li><b>Primary user:</b> Treasury / Finance Manager</li><li><b>Buyer:</b> CFO</li><li><b>Use case:</b> regularny liquidity review</li><li><b>Dependency:</b> dane z rachunków + CashFlow</li><li><b>Core:</b> salda, forecast, alert, decision draft</li><li><b>Nie robi:</b> transferów i pełnego TMS</li></ul></section>
+        <section><div class="kss-letter">S</div><h3>SAY</h3><ul><li><b>Value prop:</b> szybsza widoczność płynności</li><li><b>Hook:</b> zobacz niedobór zanim stanie się problemem</li><li><b>Time to value:</b> pierwsza użyteczna pozycja po podłączeniu danych</li><li><b>Stickiness:</b> regularny review tygodniowy / codzienny</li><li><b>Impact:</b> mniej ręcznej pracy i szybsza decyzja</li></ul></section>
+        <section><div class="kss-letter">S</div><h3>SHOW</h3><ol><li>Otwórz globalną pozycję gotówkową.</li><li>Pokaż trzy podmioty.</li><li>Zwróć uwagę na prognozę 7 dni.</li><li>Otwórz alert Niemiec.</li><li>Pokaż, dlaczego saldo spada.</li><li>Zapisz szkic decyzji.</li></ol></section>
+      </div>
+    </article>
+
+    <article class="doc-page" id="doc-tour" data-index="11">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Product tour</span><h2>Jak użytkownik przechodzi przez produkt</h2><p class="doc-lead">Product tour porządkuje entry point, główne funkcje, use cases i sposób użycia. Dla MVP wystarczą cztery kroki.</p></div></div>
+      <div class="tour-flow">
+        <div><span>1</span><h3>Overview</h3><p>Użytkownik widzi łączną gotówkę i status danych.</p></div><i>→</i>
+        <div><span>2</span><h3>Forecast</h3><p>Przegląda 7-dniową zmianę i buffer per podmiot.</p></div><i>→</i>
+        <div><span>3</span><h3>Alert</h3><p>Otwiera niedobór i widzi przyczyny.</p></div><i>→</i>
+        <div><span>4</span><h3>Decision draft</h3><p>Zapisuje decyzję / komentarz do dalszego procesu.</p></div>
+      </div>
+      <div class="doc-grid two"><section><h3>Use case</h3><p>Poniedziałkowy liquidity review w grupie z sześcioma spółkami. Użytkownik chce w 10 minut odpowiedzieć: gdzie mamy środki, gdzie będzie problem i gdzie potrzebna jest decyzja.</p></section><section><h3>Feedback mechanism</h3><p>Po review: jedno pytanie o użyteczność alertu + opcja „co było niejasne?”. W pilocie dodatkowo cotygodniowa rozmowa z partnerem.</p></section></div>
+    </article>
+
+    <article class="doc-page" id="doc-leftout" data-index="12">
+      <div class="doc-head"><div><span class="template-pill">Szablon: Ideas left out / Follow-up</span><h2>Co świadomie zostawiam poza MVP</h2><p class="doc-lead">Lista „nie teraz” chroni zespół przed tym, żeby każdy dobry pomysł automatycznie rozszerzał scope.</p></div></div>
+      <div class="leftout-table"><div class="header"><span>Pomysł</span><span>Dlaczego nie teraz</span><span>Ważność</span></div><div><b>Bank transfers</b><span>duży skok security / compliance; niepotrzebny do walidacji visibility</span><strong>High później</strong></div><div><b>FX exposure</b><span>osobny workflow i persona; rozszerza problem</span><strong>Medium</strong></div><div><b>Zaawansowane approvals</b><span>potrzebne dopiero przy write actions</span><strong>Medium</strong></div><div><b>AI recommendations</b><span>najpierw musimy zbudować zaufanie do danych i prostego alertu</span><strong>Low teraz</strong></div><div><b>12-miesięczny forecast</b><span>to bliżej istniejącego CashFlow / FP&A niż liquidity monitoring</span><strong>Out of scope</strong></div></div>
+      <div class="callout pink"><b>Zasada</b><p>„Poza scope'em” nie znaczy „zły pomysł”. Znaczy: nie potrzebuję tego, żeby odpowiedzieć na obecne pytanie biznesowe.</p></div>
+    </article>
+
+    <article class="doc-page" id="doc-post" data-index="13">
+      <div class="doc-head"><div><span class="template-pill">Szablony: Post development / Feedback & Reception / Retrospective</span><h2>Co dzieje się po pierwszym wdrożeniu</h2><p class="doc-lead">Dokumentacja nie kończy się w dniu release'u. Ma mieć miejsce na feedback, wynik metryk i decyzje po zderzeniu z rzeczywistością.</p></div></div>
+      <div class="doc-grid three">
+        <section><h3>Feedback & Reception</h3><ul><li>co użytkownicy robią inaczej niż zakładaliśmy?</li><li>jakie obiekcje powtarza Sales / CSM?</li><li>gdzie powstaje support load?</li><li>czy alerty budują czy tracą zaufanie?</li></ul></section>
+        <section><h3>Metrics review</h3><ul><li>activation / time-to-value,</li><li>usage / repeat usage,</li><li>retention,</li><li>pilot → paid,</li><li>implementation cost,</li><li>reliability.</li></ul></section>
+        <section><h3>Retrospective</h3><ul><li>co wiedzieliśmy za późno?</li><li>co było overbuilt?</li><li>który assumption był najważniejszy?</li><li>co powtórzyć w kolejnym produkcie?</li></ul></section>
+      </div>
+      <div class="decision-banner"><span>Finalna bramka</span><b>Rozwijamy / zmieniamy kierunek / zatrzymujemy</b><p>Decyzja jest zapisana razem z najważniejszymi sygnałami, żeby za trzy miesiące było wiadomo nie tylko <em>co</em> zdecydowaliśmy, ale <em>dlaczego</em>.</p></div>
+    </article>
+
+    <div class="doc-nav-bottom">
+      <button id="doc-prev" type="button">← Poprzedni dokument</button>
+      <div><span id="bottom-progress">01 / 13</span><b id="bottom-title">Development phase</b></div>
+      <button id="doc-next" type="button">Następny dokument →</button>
+    </div>
+  </main>
+</div>
+
+<script src="liquidity-docs.js"></script>
+</body>
+</html>

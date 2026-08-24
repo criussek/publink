@@ -81,14 +81,13 @@ function setText(selector,text){const el=document.querySelector(selector);if(el)
 function setHTML(selector,html){const el=document.querySelector(selector);if(el)el.innerHTML=html}
 function setList(selector,items){document.querySelectorAll(selector).forEach((el,i)=>{if(items[i]!==undefined)el.textContent=items[i]})}
 
-// Redakcja: mniej języka frameworków, więcej zwykłego opisu tego, co faktycznie robię.
 setText('.hero .lead','Na potrzeby zadania ograniczam liczbę danych i metryk. Chcę przede wszystkim pokazać, jak dochodzę do decyzji: co sprawdzam najpierw, co odkładam na później i kiedy jestem gotów zainwestować więcej.');
 setText('.hero-note strong','Nie zaczynam od budowania.');
 setText('.hero-note p','Najpierw sprawdzam, czy problem jest realny i czy warto się nim zajmować. Dopiero później dokładam czas, ludzi i większy zakres.');
 setHTML('.simplification-note','<b>Uproszczenie na potrzeby zadania:</b> w prawdziwym produkcie patrzyłbym szerzej — na adopcję, retencję, przychód, koszt wdrożenia i utrzymania, support, integracje, bezpieczeństwo oraz wpływ na całe portfolio. Na dole pokazuję taki pełniejszy obraz.');
 
 setText('#krok1 .stage-head h2','Zanim dołożę kolejny produkt, chcę wiedzieć, czy nie ma ważniejszej rzeczy do zrobienia w tym, co już mamy.');
-setText('#krok1 .thinking-grid article:nth-child(1) p','Robię szybki przegląd pięciu obecnych modułów: etap rozwoju, przychód, trend, adopcja i koszt dalszej pracy. Nie robię pełnego review portfolio — szukam tylko czegoś, co mogłoby zmienić sens dokładania nowego produktu.');
+setText('#krok1 .thinking-grid article:nth-child(1) p','Robię szybki przegląd pięciu obecnych modułów: etap rozwoju, przychód, trend, adopcja i koszt dalszej pracy. Nie robię pełnego przeglądu portfolio — szukam tylko czegoś, co mogłoby zmienić sens dokładania nowego produktu.');
 setList('#krok1 .thinking-grid article:nth-child(2) li',['Czy któryś produkt rośnie i warto w niego dołożyć zamiast otwierać nowy temat?','Czy któryś zabiera dużo pracy, a daje za mało wartości?','Czy nowy kierunek może skorzystać z klientów, danych albo elementów, które już mamy?']);
 setList('#krok1 .thinking-grid article:nth-child(3) li',['Nie zmieniam zadania tylko po to, żeby znaleźć łatwiejszą odpowiedź.','Insights zapisuję jako osobny temat do sprawdzenia.','Wracam do briefu i wybieram jeden z trzech nowych kierunków.']);
 setText('#krok1 .sticky-row .sticky.blue strong','Brief jest jasny: mam wybrać jeden z trzech nowych kierunków.');
@@ -127,7 +126,7 @@ setText('#krok4 .sticky-row .sticky.yellow p','Na tym etapie nie potrzebuję prz
 setText('#krok4 .sticky-row .sticky.blue strong','Dobieram ludzi do ryzyka, które właśnie sprawdzam.');
 setText('#krok4 .sticky-row .sticky.blue p','Pierwszą wersję mogę przygotować sam. Jeśli największa niewiadoma leży w UX, technologii albo bezpieczeństwie, od razu angażuję właściwą osobę.');
 setText('#krok4 .sticky-row .sticky.pink strong','AI skraca czas do pierwszej wersji.');
-setText('#krok4 .sticky-row .sticky.pink p','Pomaga mi szybciej przygotować research, tekst, UI, kod czy warianty rozwiązania. Nie zastępuje rozmowy z klientem ani decyzji produktowej.');
+setText('#krok4 .sticky-row .sticky.pink p','Pomaga mi szybciej przygotować analizę, tekst, UI, kod czy warianty rozwiązania. Nie zastępuje rozmowy z klientem ani decyzji produktowej.');
 setText('#krok4 .sticky-row .sticky.green strong','Mierzę tylko to, co pomaga odpowiedzieć na pytanie MVP.');
 setText('#krok4 .sticky-row .sticky.green p','Jak szybko użytkownik dochodzi do wartości, czy kończy kluczowy proces, czy wraca i co mówi po użyciu produktu.');
 
@@ -143,7 +142,7 @@ const gtmCards=[
 document.querySelectorAll('#krok5 .gtm-grid article').forEach((card,i)=>{if(!gtmCards[i])return;const h=card.querySelector('h3');const p=card.querySelector('p');if(h)h.textContent=gtmCards[i][0];if(p)p.textContent=gtmCards[i][1]});
 setText('#krok5 .dark-notes .sticky.yellow strong','Nie zastępuję Sales. Jestem blisko pierwszych klientów, dopóki uczymy się, jak ten produkt sprzedawać.');
 setText('#krok5 .dark-notes .sticky.pink strong','Chcę wiedzieć, co naprawdę zatrzymuje klienta przed decyzją.');
-setText('#krok5 .dark-notes .sticky.pink p','Cena, timing, bezpieczeństwo, integracje, procurement albo po prostu za mała wartość problemu.');
+setText('#krok5 .dark-notes .sticky.pink p','Cena, moment zakupu, bezpieczeństwo, integracje, procurement albo po prostu za mała wartość problemu.');
 setText('#krok5 .dark-notes .sticky.blue strong','Na start przygotowuję: profil klienta, jednozdaniowy opis wartości, demo, ofertę pilota, pierwsze założenie cenowe i listę typowych obiekcji.');
 setText('#krok5 .dark-notes .sticky.green strong','Patrzę, czy klient faktycznie przechodzi do kolejnego kroku.');
 setText('#krok5 .dark-notes .sticky.green p','Rozmowa → demo → pilot → regularne użycie → decyzja o płatnym wdrożeniu. To mówi mi więcej niż „fajny pomysł”.');
@@ -156,7 +155,7 @@ setText('#krok6 .decision-option.stop p','Kończę temat zanim zamieni się w du
 setList('#krok6 .enterprise-action-grid>div span',['docelowy zakres, priorytety i plan kolejnych wersji wspólnie z Designem i Engineeringiem','analityka produktu, segmentacja klientów, kohorty i regularne łączenie danych z rozmowami','onboarding, integracje, przegląd bezpieczeństwa, plan wdrożenia i czas do pierwszej wartości','cena i pakiety, materiały dla Sales/CS, demo, pierwsze case studies i referencje','ARR, pipeline, expansion, koszt utrzymania, wpływ na churn i wartość całego portfolio','regularne rozmowy z klientami, feedback z Supportu i Sales oraz świadome decyzje, czego nie budować']);
 setList('#krok6 .timeline-track>div span',['szybki przegląd portfolio i danych wewnętrznych, lista rozmówców, przygotowanie scenariusza','rozmowy z użytkownikami i CFO, równolegle pierwsza ocena wykonalności technicznej','MVP / prototyp, poprawki po rozmowach i przygotowanie prostego pilota','pierwsze demo, wybór partnerów pilotażowych i dopracowanie komunikatu GTM','pilot na prawdziwych danych, podstawowa analityka i cotygodniowe rozmowy z użytkownikami','sprawdzenie powrotów do produktu, wartości, ceny i ryzyk enterprise → decyzja co dalej']);
 
-setText('#ai .lead-small','AI nie jest dla mnie osobnym projektem. Używam go tam, gdzie realnie skraca pracę: przy researchu, pierwszych prototypach, kodzie, testach, porządkowaniu feedbacku i powtarzalnych zadaniach.');
+setText('#ai .lead-small','AI nie jest dla mnie osobnym projektem. Używam go tam, gdzie realnie skraca pracę: przy analizie, pierwszych prototypach, kodzie, testach, porządkowaniu feedbacku i powtarzalnych zadaniach.');
 
 setText('.cheat-grid>div:nth-child(1) span','Najpierw sprawdzam obecne portfolio, ale trzymam się briefu: wybieram jeden z trzech nowych kierunków.');
 setText('.cheat-grid>div:nth-child(2) span','Jako pierwszy sprawdzam „Płynność”, bo problem jest ważny, a kierunek dobrze pasuje do CashFlow i obecnych klientów.');
@@ -164,3 +163,66 @@ setText('.cheat-grid>div:nth-child(3) span','Rozmawiam z użytkownikami i CFO, a
 setText('.cheat-grid>div:nth-child(4) span','Buduję małe MVP pod jeden konkretny scenariusz — sam albo z właściwymi osobami z Designu i Engineeringu, zależnie od tego, co chcę sprawdzić.');
 setText('.cheat-grid>div:nth-child(5) span','Współtworzę pierwszy GTM i jestem blisko pierwszych klientów, dopóki nie mamy procesu, który Sales może powtarzać bez mojego stałego udziału.');
 setText('.cheat-grid>div:nth-child(6) span','Dalej inwestuję tylko wtedy, gdy razem zgadzają się: problem, użycie, powroty do produktu, realna wartość, gotowość do zapłaty i sens wdrożenia w enterprise.');
+
+// Ostatnia runda: usuwam sztuczne brzmienie i fałszywą precyzję tam, gdzie nie wnosi wartości.
+setText('.hero .eyebrow','Zadanie rekrutacyjne • moje założenia • sposób pracy');
+setText('.assumptions .section-title h2','Założenia, które przyjmuję na potrzeby zadania');
+setText('#krok1 .portfolio-card:first-child span','Skalowanie');
+
+setText('#krok2 .stage-head h2','Na potrzeby zadania sprowadzam trzy pomysły do prostych opcji, żeby dało się je szybko porównać i wybrać pierwszą do sprawdzenia.');
+setText('#krok2 .option-simple-grid article:nth-child(1) p:nth-of-type(3)','Atut: duży rynek i łatwa do wyjaśnienia wartość.');
+setText('#krok2 .option-simple-grid article:nth-child(2) p:nth-of-type(2)','Użytkownik: zespół treasury / finanse.');
+setText('#krok2 .option-simple-grid article:nth-child(2) p:nth-of-type(3)','Atut: kierunek jest blisko CashFlow i obecnych klientów.');
+setText('#krok2 .option-simple-grid article:nth-child(3) p:nth-of-type(4)','Ryzyko: trudniej szybko sprawdzić, czy klienci będą gotowi zapłacić.');
+const finalCompare=[
+ ['Siła problemu',['Wysoka','Bardzo wysoka','Wysoka']],
+ ['Szansa na przychód',['Wysoka','Wysoka','Średnia']],
+ ['Dopasowanie do obecnych klientów',['Średnie','Bardzo dobre','Dobre']],
+ ['Szybkość sprawdzenia',['Średnia','Dobra','Średnia']],
+ ['Trudność realizacji',['Wysoka','Średnia','Średnia']]
+];
+document.querySelectorAll('#krok2 .compare-row:not(.header)').forEach((row,i)=>{
+  if(!finalCompare[i])return;
+  const label=row.querySelector('span'); if(label)label.textContent=finalCompare[i][0];
+  row.querySelectorAll('b').forEach((cell,j)=>{if(finalCompare[i][1][j])cell.textContent=finalCompare[i][1][j]});
+});
+setText('#krok2 .compare-head p','To robocze założenia, nie wynik analizy danych. Mają tylko pomóc wybrać kierunek, który warto sprawdzić jako pierwszy.');
+
+setText('#krok4 .stage-kicker','Krok 4 — MVP');
+setText('#krok4 .mvp-explainer>div:nth-child(3) .thinking-label','Co chcę sprawdzić');
+setText('#krok4 .prototype .recommendation .track-label','Co widzi użytkownik');
+
+setText('#krok5 .stage-head h2','Jestem blisko pierwszych klientów, dopóki nie wiemy, komu to sprzedajemy, jak o tym mówić i jak powinien wyglądać pierwszy pilot.');
+setList('#krok5 .gtm-grid .track-label',['1. Profil klienta','2. Wartość','3. Demo','4. Pilot','5. Builder na rozmowie','6. Przekazanie do Sales']);
+
+setText('#krok6 .metric-strips>div:nth-child(6) b','Wykonalność w enterprise');
+setText('#krok6 .decision-option.go h3','Klienci mają problem, używają produktu i są gotowi za niego płacić');
+setText('#krok6 .decision-option.pivot h3','Problem jest realny, ale rozwiązanie albo model nie trafiają');
+setText('#krok6 .decision-option.stop h3','Nie widzę wystarczającej wartości lub gotowości do zapłaty');
+setText('#krok6 .enterprise-actions>h3','Jeśli rozwijamy — co robię dalej?');
+
+setText('#ai .section-title h2','Używam AI tam, gdzie po prostu oszczędza mi czas.');
+setText('#ai .mini-note:nth-child(1) span','prostszy i tańszy model, jeśli mocniejszy nic nie wnosi');
+setText('#ai .mini-note:nth-child(2) span','krótszy kontekst i cache zamiast wysyłania w kółko tego samego');
+setText('#ai .mini-note:nth-child(3) span','pracuję na konkretnym pliku, zmianie albo fragmencie repozytorium');
+setText('#ai .mini-note:nth-child(4) span','osobne role do analizy, eksploracji kodu, testów i review');
+setText('#ai .mini-note:nth-child(5) span','ograniczam zbędną długość odpowiedzi agentów, gdy nie daje mi dodatkowej wartości');
+
+setText('#enterprise-model .section-title p','Główny case pokazuje najważniejsze decyzje. Tutaj zostawiam szerszy zestaw rzeczy, które mierzyłbym już przy prawdziwym wdrożeniu produktu enterprise.');
+const appendixCopy=[
+ 'Rozmowy z użytkownikami, CFO, CSM, Support i Sales. Notatki i transkrypcje, powtarzające się tematy, obecny sposób pracy i alternatywy, z których klienci korzystają dzisiaj.',
+ 'Aktywacja, czas do pierwszej wartości, udział aktywnych kont, wykorzystanie przez różne role oraz to, czy użytkownicy kończą kluczowy proces.',
+ 'Powroty do kluczowego procesu, kohorty W4/W8/W12, spadki użycia, przyczyny odejść i jakościowy feedback z wdrożeń.',
+ 'Przejście z pilota do płatnego produktu, ACV, pipeline, powody wygranych i przegranych, expansion oraz wpływ na NRR.',
+ 'Czas wdrożenia, integracje, bezpieczeństwo, compliance, obciążenie supportu, SLA, niezawodność, uprawnienia i koszt utrzymania.',
+ 'Wpływ na istniejące moduły, cross-sell, wspólne elementy platformy, koszty zespołu i to, z czego rezygnujemy, wybierając ten kierunek.'
+];
+document.querySelectorAll('#enterprise-model .expanded-appendix-grid article p').forEach((p,i)=>{if(appendixCopy[i])p.textContent=appendixCopy[i]});
+
+setText('.figjam-section .section-title h2','Ten sam proces pokazany na jednej planszy.');
+setText('.figjam-section .lead-small','FigJam służy mi tutaj jako mapa do rozmowy z zespołem: główny przebieg pośrodku, a obok pytania, założenia i decyzje, które podejmuję na każdym etapie.');
+
+setText('.why-section .why-grid article:nth-child(1) p','Nie udaję, że w kilka godzin powstał gotowy produkt. Pokazuję, że w tym czasie da się przygotować coś konkretnego, co można od razu omówić z zespołem albo klientem.');
+setText('.why-section .why-grid article:nth-child(2) p','W tym zadaniu użyłem Codexa oraz integracji z GitHubem, Vercel i Figmą. Dla mnie to po prostu szybszy sposób przejścia od pomysłu do materiału, który można sprawdzić i poprawić.');
+setText('.why-section .why-grid article:nth-child(3) p','Pierwszy wariant UI, demo, opis rozwiązania czy materiał do rozmowy mogę przygotować sam. Design, Engineering albo Security włączam wtedy, gdy ich wiedza pomaga odpowiedzieć na kolejne ważne pytanie.');
+setText('.why-section .why-grid article:nth-child(4) p','Chciałem pokazać nie tylko pracę nad rozwiązaniem, ale też rozmowy z klientami, decyzje biznesowe, GTM i techniczne pytania, które potrafią zmienić kierunek produktu bardzo wcześnie.');
